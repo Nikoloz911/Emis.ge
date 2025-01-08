@@ -1,0 +1,264 @@
+<nav class="nav-bar">
+    <div class="nav-bar-left-side">
+        <a class="nav-bar-image-link" href="/home">
+        <img class="nav-bar-image" src="https://www.emis.ge/assets/svg/logo-with-name-dark.svg" alt="">
+    </a>
+    </div>
+    <div class="nav-bar-right-side">
+           <!-- NAV-BAR Links -->
+          <ul class="nav-bar-links">    
+<a  class="nav-bar-link" href="/goals">
+  <li class="nav-bar-link-text" id="goals">
+    ჩვენს შესახებ
+    <div class="nav-bar-link-icon"><i class="bi bi-chevron-down"></i></div>
+  </li>
+  <!-- FIRST-DROPDOWN-CONTAINER -->
+  <div class="first-dropdown-container">
+    <a href="/goals">მისია, მიზნები, სტრატეგია</a>
+    <a href="/legalActs">სამართლებლივი აქტები</a>
+    <a href="/management">ჩვენი გუნდი</a>
+    <a href="/vacancies">ვაკანსიები</a>
+    <a href="/faq">FAQ</a>
+  </div>
+  <!-- FIRST-DROPDOWN-CONTAINER -->
+</a>
+        <a class="nav-bar-link" href="/projects/9">
+            <li class="nav-bar-link-text">პროდუქტები
+                <div class="nav-bar-link-icon"><i class="bi bi-chevron-down"></i></div>
+      </li>
+       <!-- second-DROPDOWN-CONTAINER -->
+  <div class="second-dropdown-container">
+    <a href="/projects/1">სკოლამდელი განათლება</a>
+    <a href="/projects/9">ზოგადი განათლება</a>
+    <a href="/projects/3">პროფესიული განათლება</a>
+    <a href="/projects/10">უმაღლესი განათლება</a>
+    <a href="/projects/7">სხვა</a>
+  </div>
+  <!-- second-DROPDOWN-CONTAINER -->
+    </a>
+    <a class="nav-bar-link" href="/services/9">
+        <li class="nav-bar-link-text">სერვისები
+            <div class="nav-bar-link-icon"><i class="bi bi-chevron-down"></i></div>
+  </li>
+     <!-- third-DROPDOWN-CONTAINER -->
+     <div class="third-dropdown-container">
+      <a href="/services/1">სკოლამდელი განათლება</a>
+      <a href="/services/9">ზოგადი განათლება</a>
+      <a href="/services/3">პროფესიული განათლება</a>
+      <a href="/services/10">უმაღლესი განათლება</a>
+      <a href="/services/7">სხვა</a>
+    </div>
+    <!-- third-DROPDOWN-CONTAINER -->
+</a>
+<a class="nav-bar-link" routerLink="/posts">
+  <li id="text-news" class="nav-bar-link-text">
+    სიახლეები
+  </li>
+</a>
+
+<a class="nav-bar-link" routerLink="/public-info">
+  <li id="text-public-info" class="nav-bar-link-text">
+    საჯარო ინფორმაცია
+  </li>
+</a>
+
+<a class="nav-bar-link" href="" (click)="scrollToBottom($event)">
+  <li id="text-contact" class="nav-bar-link-text">
+    კონტაქტი
+  </li>
+</a>
+            <!-- NAV-BAR Links -->
+          </ul>   
+         <!-- NAV-BAR Button -->
+<div class="nav-bar-button-container">
+  <button (click)="toggleTheme()" class="nav-bar-button">
+    <i *ngIf="darkMode; else lightMode" class="bi bi-brightness-high" ></i>
+    <ng-template #lightMode>
+      <i class="bi bi-moon"></i>
+    </ng-template>
+  </button>
+</div>
+<!-- NAV-BAR Button -->
+ <!------------------------------------ BURGER MENU------------------------------------>
+ <div id="burger-menu" class="burger-menu" (click)="toggleMenu()">
+  <i class="bi" [ngClass]="menuOpen ? 'bi-x-lg' : 'bi-list'"></i>
+</div>
+<!------------------------------------ BURGER MENU------------------------------------>
+    </div>
+    <!------------------------------------ MODAL-CONTAINER ------------------------------------>
+<div class="open-modal" (click)="openModal()">
+  <div class="modal-circle"></div>
+  <div class="modal-circle"></div>
+  <div class="modal-circle"></div>
+</div>
+<div class="modal-overlay" [ngClass]="{'open': isModalOpen}"> 
+  <div class="modal-content">
+    <div class="modal-button" (click)="closeModal()"><i class="bi bi-x-lg"></i></div>
+    <div class="modal-content-top-side">
+      <div class="modal-line"></div>
+      <p style="margin-left: 10px;">მიმართულებები</p>
+    </div>
+    <div class="modal-content-center-side">
+      <a href="/projects/1" class="modal-card">
+        <div class="modal-card-icon"><i class="bi bi-book"></i></div>
+        <div class="modal-card-title">სკოლამდელი განათლება</div>
+      </a>
+      <a href="/projects/9" class="modal-card">
+        <div class="modal-card-icon"><i class="bi bi-book"></i></div>
+        <div class="modal-card-title">ზოგადი განათლება</div>
+      </a>
+      <a href="/projects/3" class="modal-card">
+        <div class="modal-card-icon"><i class="bi bi-book"></i></div>
+        <div class="modal-card-title">პროფესიული განათლება</div>
+      </a>
+      <a href="/projects/10" class="modal-card">
+        <div class="modal-card-icon"><i class="bi bi-book"></i></div>
+        <div class="modal-card-title">უმაღლესი განათლება</div>
+      </a>
+      <a href="/projects/7" class="modal-card">
+        <div class="modal-card-icon"><i class="bi bi-book"></i></div>
+        <div class="modal-card-title">სხვა</div>
+      </a>
+    </div>
+    <div class="modal-content-bottom-side">
+      <div class="modal-bottom-line"></div>
+      <p>სოციალური მედია</p>
+    </div>
+    <div class="modal-content-links">
+      <a href="https://www.facebook.com/share_channel/" class="modal-link"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%2F%3Furl%3Dhttps%253A%252F%252Femis.ge%252F" class="modal-link"><i style=" margin-right: 20px;" class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</div>
+
+    <!------------------------------------ MODAL-CONTAINER ------------------------------------>
+  <!-------------------------------------  BURGER-MENU CONTENT  ------------------------------------------------------>
+  <div class="menu-modal" [class.menu-open]="menuOpen">
+    <div class="menu-modal-content" [ngClass]="{'expanded': isDropdownOpen !== null}">
+      <ul class="menu-modal-links-container">
+        <!----------------------------------- 1 BURGER - MENU DROPDOWN --------------------------->
+        <li>
+          <div class="menu-modal-container" (click)="toggleDropdown(1)" [ngClass]="{'no-border': isDropdownOpen === 1}">
+            <a class="menu-modal-link" href="/goals">
+              <p class="menu-modal-link-text">ჩვენს შესახებ</p>
+            </a>
+            <div class="menu-modal-link-icon">
+              <i class="bi" [ngClass]="isDropdownOpen === 1 ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+            </div>
+          </div>
+          <ul *ngIf="isDropdownOpen === 1" class="dropdown-content">
+            <a href="/goals">მისია, მიზნები, სტრატეგია</a>
+            <a href="/legalActs">სამართლებლივი აქტები</a>
+            <a href="/management">ჩვენი გუნდი</a>
+            <a href="/vacancies">ვაკანსიები</a>
+            <a href="/faq">FAQ</a>
+          </ul>
+        </li>
+        <!----------------------------------- 1 BURGER - MENU DROPDOWN --------------------------->
+  
+        <!----------------------------------- 2 BURGER - MENU DROPDOWN --------------------------->
+        <li>
+          <div class="menu-modal-container" (click)="toggleDropdown(2)" [ngClass]="{'no-border': isDropdownOpen === 2}">
+            <a class="menu-modal-link" href="/projects/9">
+              <p class="menu-modal-link-text">პროდუქტები</p>
+            </a>
+            <div class="menu-modal-link-icon">
+              <i class="bi" [ngClass]="isDropdownOpen === 2 ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+            </div>
+          </div>
+          <ul *ngIf="isDropdownOpen === 2" class="dropdown-content">
+            <a href="/projects/1">სკოლამდელი განათლება</a>
+            <a href="/projects/9">ზოგადი განათლება</a>
+            <a href="/projects/3">პროფესიული განათლება</a>
+            <a href="/projects/10">უმაღლესი განათლება</a>
+            <a href="/projects/7">სხვა</a>
+          </ul>
+        </li>
+        <!----------------------------------- 2 BURGER - MENU DROPDOWN --------------------------->
+         <!----------------------------------- 3 BURGER - MENU DROPDOWN --------------------------->
+         <li>
+          <div class="menu-modal-container" (click)="toggleDropdown(3)" [ngClass]="{'no-border': isDropdownOpen === 3}">
+            <a class="menu-modal-link" href="/services/9">
+              <p class="menu-modal-link-text">სერვისები</p>
+            </a>
+            <div class="menu-modal-link-icon">
+              <i class="bi" [ngClass]="isDropdownOpen === 3 ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+            </div>
+          </div>
+          <ul *ngIf="isDropdownOpen === 3" class="dropdown-content">
+            <a href="/services/1">სკოლამდელი განათლება</a>
+      <a href="/services/9">ზოგადი განათლება</a>
+      <a href="/services/3">პროფესიული განათლება</a>
+      <a href="/services/10">უმაღლესი განათლება</a>
+      <a href="/services/7">სხვა</a>
+          </ul>
+        </li>
+        <!----------------------------------- 3 BURGER - MENU DROPDOWN --------------------------->
+          <!----------------------------------- 4 BURGER - MENU link --------------------------->
+          <li>
+            <div class="menu-modal-container" >
+              <a class="menu-modal-link" href="/posts">
+                <p class="menu-modal-link-text">სიახლეები</p>
+              </a>           
+            </div>     
+          </li>
+          <!----------------------------------- 4 BURGER - MENU link --------------------------->
+           <!----------------------------------- 5 BURGER - MENU link --------------------------->
+           <li>
+            <div style="border-bottom: none;" class="menu-modal-container" >
+              <a class="menu-modal-link" href="/public-info">
+                <p style="width: 200px;" class="menu-modal-link-text">საჯარო ინფორმაცია</p>
+              </a>           
+            </div>     
+          </li>
+          <!----------------------------------- 5 BURGER - MENU link --------------------------->
+      </ul>
+    </div>
+    <div class="menu-modal-cards-container">
+      <div class="menu-modal-cards-container-title-section">
+        <div class="menu-modal-cards-container-line"></div>
+          <p class="menu-modal-cards-container-title">მიმართულებები</p>
+      </div>
+      <div class="menu-modal-cards-section">
+        <a class="menu-modal-card-link" href="/projects/1">
+        <div class="menu-modal-card">
+          <div class="modal-card-icon"><i class="bi bi-book"></i></div>
+          <div class="modal-card-title">სკოლამდელი განათლება</div>
+        </div>
+      </a>
+      <a class="menu-modal-card-link" href="/projects/9">
+        <div class="menu-modal-card">
+          <div class="modal-card-icon"><i class="bi bi-book"></i></div>
+          <div class="modal-card-title">ზოგადი განათლება</div>
+        </div>
+      </a>
+      <a class="menu-modal-card-link" href="/projects/3">
+        <div class="menu-modal-card">
+          <div class="modal-card-icon"><i class="bi bi-book"></i></div>
+          <div class="modal-card-title">პროფესიული განათლება</div>
+        </div>
+      </a>
+      <a class="menu-modal-card-link" href="/projects/10">
+        <div class="menu-modal-card">
+          <div class="modal-card-icon"><i class="bi bi-book"></i></div>
+          <div class="modal-card-title">უმაღლესი განათლება</div>
+        </div>
+      </a>
+      <a class="menu-modal-card-link" href="/projects/7">
+        <div class="menu-modal-card">
+          <div class="modal-card-icon"><i class="bi bi-book"></i></div>
+        <div class="modal-card-title">სხვა</div>
+        </div>
+      </a>
+      <!--  -->
+      </div>
+      <!-- <div class="menu-modal-footer">
+        <div class="menu-modal-footer-line"></div>
+      </div> -->
+    </div>
+  </div>
+  
+  <!-------------------------------------  BURGER - MENU CONTENT  ------------------------------------------------------>
+
+</nav>
+

@@ -1,0 +1,410 @@
+<app-nav-bar></app-nav-bar>
+
+
+<div id="body" class="body">
+    <!-- COPYING HTML -->
+
+<div class="home-test-mode-container">
+    <p class="home-test-mode-container-text">საიტი მუშაობს სატესტო რეჟიმში</p>
+</div>
+
+<button class="postsDetails-page-back-button" (click)="goBack()">
+    <i class="bi bi-arrow-left-short"></i> </button>
+<div class="posts-page-title-side">
+    <!-- COPYING BUTTON -->
+    
+    <!-- COPYING BUTTON -->
+    <h1 class="posts-page-title">FAQ</h1>
+    <div class="posts-page-blue-line"></div>
+</div>
+<!-- COPYING HTML -->
+<div id="faq-container" class="faq-container">
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">რა შემთხვევაში უბრუნდება სტუდენტს მობილობის საფასური?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div>  
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">მობილობის საფასური (40 ლარი) სტუდენტს სრულად დაუბრუნდება:</p>
+        <p class="faq-container-card-dropdown-description">
+            თუ მობილობის წესით ჩასარიცხ პირთა ელექტრონულ პორტალზე რეგისტრაციის ვადის დასრულების შემდეგ აღმოჩნდება, რომ მას არ აქვს გაკეთებული/დაფიქსირებული განაცხადი/არჩევანი მობილობაზე.          
+          </p>
+          <p class="faq-container-card-dropdown-description"> თუ საფასური გადახდილია დადგენილ განაკვეთზე მეტი ოდენობით. ამ შემთხვევაში საფასურის გადამხდელს უბრუნდება სხვაობა. საფასურის დაბრუნების შესახებ წერილობითი მოთხოვნა წარდგენილი უნდა იქნეს საფასურის გადახდიდან 3 თვის განმავლობაში. გადახდილი საფასური ამ ვადის გასვლის შემდეგ არ ბრუნდება. ვადის გაგრძელება ან გაშვებული ვადის აღდგენა დაუშვებელია. საფასური ბრუნდება დაინტერესებული პირის წერილობითი მოთხოვნიდან 10 სამუშაო დღის განმავლობაში.</p>
+      </div>
+    </div>
+
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">როდის შეუძლია სტუდენტს უარი განაცხადოს მობილობით ჩარიცხვაზე?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">თუ სტუდენტი უარს აცხადებს მობილობის წესით ჩარიცხვაზე, წერილობითი განცხადებით უნდა მიმართოს მიმღებ უმაღლეს საგანმანათლებლო დაწესებულებას, მობილობის წესით ჩარიცხვის ბრძანების გამოცემამდე.</p>
+       
+      </div>
+    </div>
+
+ <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">როდის ითვლება სტუდენტი მობილობის წესით ჩარიცხულად?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">მიმღები უმაღლესი საგანმანათლებლო დაწესებულების მიერ ამ სტუდენტის მობილობის წესით ჩარიცხვის თაობაზე ბრძანების გამოცემის დღიდან.</p>
+       
+      </div>
+    </div>
+
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">ვინ იღებს გადაწყვეტილებას სტუდენტის კრედიტების აღიარების თაობაზე?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">სტუდენტის მიერ დაგროვილი კრედიტების აღიარების შესახებ გადაწყვეტილებას იღებს მიმღები უმაღლესი საგანმანათლებლო დაწესებულება, სტუდენტის მიერ წარდგენილ პირად საქმეში არსებული დოკუმენტაციის საფუძველზე.</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">როგორ ირიცხება სტუდენტი მობილობის საფუძველზე უმაღლეს საგანმანათლებლო დაწესებულებაში?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">ელექტრონული პორტალის მონაცემების მიხედვით, მობილობის უფლების მოპოვების (დადებითი პასუხის) შემთხვევაში, სტუდენტმა დაუყოვნებლივ უნდა მიმართოს წერილობითი განცხადებით მიმღებ უმაღლეს საგანმანათლებლო დაწესებულებას, მის მიერ დადგენილ ვადებში და წარადგინოს პირადი საქმის ასლები.
+
+            დაუშვებელია სტუდენტისათვის პირადი საქმის ასლების მიღებაში ხელის შეშლა.</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">აქვს თუ არა უფლება უმაღლეს საგანმანათლებლო დაწესებულებას მობილობისათვის დააწესოს დამატებითი მოთხოვნები?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">უმაღლესი საგანმანათლებლო დაწესებულება უფლებამოსილია, დაადგინოს დამატებითი მოთხოვნები სტუდენტების მობილობით ჩარიცხვასთან დაკავშირებით (გამოცდა, შემოქმედებითი ტური, გასაუბრება და ა.შ) ან/და შეზღუდოს კონკრეტულ საგანმანათლებლო პროგრამაზე მიღება კონკრეტული პირობით (სწავლების წელი, ათვისებული კრედიტების რაოდენობა და ა.შ.).</p>
+       <p class="faq-container-card-dropdown-description">დამატებითი მოთხოვნები აისახება ელექტრონულ პორტალზე შესაბამისი საგანმანათლებლო პროგრამის შენიშვნების გრაფაში. სტუდენტი ვალდებულია აღნიშნულ მოთხოვნებს გაეცნოს და გაითვალისწინოს.</p>
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">რა თავისებურება აქვს სახელოვნებო-შემოქმედებით და სასპორტო საგანმანათლებლო პროგრამებზე მობილობის პროცესს?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">სახელოვნებო-შემოქმედებით ან სასპორტო საგანმანათლებლო პროგრამაზე მობილობის მსურველი, ელექტრონულ პორტალზე რეგისტრაციის ვადის დასრულებამდე, გადის კონკურსს დაწესებულების მიერ დადგენილი წესით, აუცილებლად რეგისტრირდება ელექტრონულ პორტალზე და ირჩევს ერთ სახელოვნებო-შემოქმედებით ან სასპორტო პროგრამას.</p>
+       <p class="faq-container-card-dropdown-description">სახელოვნებო-შემოქმედებით ან სასპორტო  საგანმანათლებლო პროგრამაზე მობილობით ჩარიცხვა ხორციელდება დაწესებულების მიერ ორგანიზებული კონკურსის შედეგების მიხედვით.  დაწესებულება ვალდებულია კონკურსის შედეგები ელექტრონულ პორტალზე სტუდენტთა რეგისტრაციის ვადის დასრულებამდე არაუგვიანეს 3 სამუშაო დღით ადრე, აცნობოს მობილობის მსურველს და განათლების მართვის საინფორმაციო სისტემას.</p>
+       <p class="faq-container-card-dropdown-description">სახელოვნებო-შემოქმედებით ან სასპორტო საგანმანათლებლო პროგრამაზე მობილობის მსურველი, რომელიც წარმატებით გაივლის დაწესებულების კონკურსს, ვალდებულია ელექტრონულ პორტალზე არჩევანში მითითებული ჰქონდეს სათანადო პროგრამა, რეგისტრაციის პროცესის დასრულებამდე. იგი უნდა გაეცნოს მობილობის საბოლოო შედეგებს ელექტრონულ პორტალზე პირად სარეგისტრაციო გვერდზე. დადებითი პასუხის შემთხვევაში, დაუყოვნებლივ მიმართოს წერილობითი განცხადებით მიმღებ უმაღლეს საგანმანათლებლო დაწესებულებას და წარუდგინოს პირადი საქმის ასლები, რის შემდგომაც უნდა გაეცნოს მიმღები  უმაღლესი საგანმანათლებლო დაწესებულების მიერ აღიარებული კრედიტების შესახებ ინფორმაციას და წერილობითი განცხადებით დაადასტუროს თანხმობა/უარი.</p>
+       <p class="faq-container-card-dropdown-description">ხოლო სახელოვნებო-შემოქმედებით ან სასპორტო საგანმანათლებლო პროგრამაზე მობილობის მსურველი, რომელიც ვერ გაივლის დაწესებულების მიერ განსაზღვრულ კონკურსს, უფლებამოსილია ელექტრონულ პორტალზე სტუდენტთა რეგისტრაციის ვადის დასრულებამდე აირჩიოს სხვა საგანმანათლებლო პროგრამა და მონაწილეობა მიიღოს მობილობის კონკურში, კანონმდებლობით დადგენილი წესით.</p>
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">როგორ მიმდინარეობს კონკურსი?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">ელექტრონულ პორტალზე კონკურსი მიმდინარეობს სტუდენტის მიერ განსაზღვრული პრიორიტეტებისა და საკონკურსო ქულის (ერთიანი ეროვნული გამოცდებზე მინიჭებული ქულა), გარდა სახელოვნებო-შემოქმედებითი და სასპორტო საგანმანათლებლო პროგრამებისა,  გათვალისწინებით.</p>
+        <p class="faq-container-card-dropdown-description">ორი ან მეტი თანაბარი საკონკურსო ქულის მქონე სტუდენტის ბოლო საკონკურსო ადგილზე გასვლის შემთხვევაში, პორტალზე მობილობის უფლებას მოიპოვებს თითოეული მათგანი.</p>
+        <p class="faq-container-card-dropdown-description">ბაკალავრიატის საფეხურის სახელოვნებო-შემოქმედებით და სასპორტო პროგრამებზე, ასევე სამაგისტრო და სადოქტორო საგანმანათლებლო პროგრამებზე მობილობის უფლების მოპოვება ხორციელდება მხოლოდ მიმღები დაწესებულების მიერ ორგანიზებული კონკურსის შედეგების და მის მიერ დადგენილი ჩარიცხვის წინაპირობების დაცვით.</p>
+        <p class="faq-container-card-dropdown-description">სტუდენტები, რომლებსაც უმაღლესი განათლების მართვის საინფორმაციო სისტემაში არ უფიქსირდებათ საკონკურსო ქულა (სახელოვნებო-შემოქმედებით ან სასპორტო პროგრამაზე მობილობის მსურველი პირები, ერთიანი ეროვნული გამოცდების გარეშე კანონმდებლობით ჩარიცხული სტუდენტები, მაგისტრანტები, დოქტორანტები) პორტალზე მობილობით გადასვლის უფლებას მოიპოვებენ კონკურსის გარეშე (უკონკურსოდ).</p>
+        <p class="faq-container-card-dropdown-description">მნიშვნელოვანია! - მობილობის წესით უმაღლეს საგანმანათლებლო დაწესებულებაში ჩარიცხვის უფლებას პირველ რიგში მოიპოვებენ ის სტუდენტები, რომლებსაც აღნიშნული დაწესებულება პირველ პრიორიტეტად აქვთ მითითებული (გარდა სახელოვნებო-შემოქმედებით ან სასპორტო პროგრამისა). დარჩენილი ადგილები განაწილდება მეორე, მესამე და ა.შ. პრიორიტეტებად რეგისტრირებული განაცხადების შესაბამისად.</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">რა შემთხვევაში განიხილება მობილობის მსურველის განაცხადი შედეგების დათვლისას?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">მობილობის მსურველის განაცხადი შედეგების დათვლისას განიხილება მობილობის საფასურის რეგისტრაციის ვადის დასრულებამდე გადახდის შემთხვევაში.</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">ვინ თავისუფლდება მობილობის საფასურის გადახდისგან?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">მობილობის საფასურის გადახდისაგან თავისუფლდება სტუდენტი, რომლის ოჯახიც მობილობის წესით ჩასარიცხ პირთა ელექტრონულ პორტალზე რეგისტრაციის პერიოდში რეგისტრირებულია სოციალურად დაუცველი ოჯახების მონაცემთა ერთიან ბაზაში და მისი სარეიტინგო ქულა არ აღემატება 70 000-ს.</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">შეუძლია თუ არა სტუდენტს შეცვალოს მის მიერ პორტალზე გაკეთებული არჩევანი?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">სტუდენტთა რეგისტრაციის დასრულებამდე, მობილობის ელექტრონულ პორტალზე შესაძლებელია ნებისმიერი ცვლილების (რედაქტირების) განხორციელება (თანმიმდევრობის შეცვლა, არჩეული პროგრამის წაშლა, ახლის დამატება და ა.შ.)</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">რამდენი არჩევანის დაფიქსირება შეუძლია სტუდენტს მობილობის ელექტრონულ განაცხადში?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">მობილობის მსურველს შეუძლია პორტალზე აირჩიოს და დაარეგისტრიროს ცალ-ცალკე, პრიორიტეტის მიხედვით, არაუმეტეს 5 (ხუთი) საგანმანათლებლო პროგრამა. გარდა სახელოვნებო-შემოქმედებით და სასპორტო საგანმანათლებლო პროგრამაზე მობილობის შემთხვევისა.  პრიორიტეტულობის პრინციპი ნიშნავს არჩეული პროგრამების დალაგებას უპირატესობის მინიჭების მიხედვით. სახელოვნებო-შემოქმედებით ან სასპორტო საგანმანათლებლო პროგრამაზე მობილობის მსურველი, ელექტრონულ პორტალზე ირჩევს მხოლოდ ერთ სახელოვნებო-შემოქმედებით ან სასპორტო პროგრამას.</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">რა შემთხვევაში აქვს სტუდენტს მობილობის უფლება?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">მობილობის უფლება სტუდენტს წარმოეშობა უმაღლესი განათლების შესაბამის საფეხურზე სწავლების ერთი წლის შემდეგ. სწავლების პერიოდში არ შედის ის დრო, რომლის განამვლობაშიც პირს შეჩერებული ჰქონდა სტუდენტის სტატუსი;</p>
+        <p class="faq-container-card-dropdown-description">მობილობა შესაძლებელია განხორციელდეს უმაღლესი განათლების ერთი საფეხურის ფარგლებში.</p>
+        <p class="faq-container-card-dropdown-description">უმაღლესი განათლების პირველ საფეხურზე 2020 და შემდგომი წლების ერთიანი ეროვნული გამოცდების შედეგების საფუძველზე ჩარიცხულ სტუდენტებს მობილობის უფლება აქვთ, მხოლოდ იმ პროგრამებზე, რომლებსაც შეესაბამება მათ მიერ ერთიან ეროვნულ გამოცდებზე ჩაბარებული სავალდებულო საგანი/საგნები, რის კონტროლსაც უზრუნველყოფს ელექტრონული პორტალი. საგანმანათლებლო პროგრამებზე მობილობისთვის აუცილებელი საგანი/საგნების შესახებ ინფორმაცია განთავსებულია პორტალზე.
+
+            მნიშვნელოვანია, რომ მობილობის მსურველ 2020 და შემდგომი წლების ერთიანი ეროვნული გამოცდების საფუძველზე  ჩარიცხულ სტუდენტებს, თუ  2020 წლამდე მიღებული აქვთ მონაწილეობა ერთიან ეროვნულ გამოცდებში და შესაბამის საგანში გადალახული აქვთ მინიმალური კომპეტენციის ზღვარი, საშუალება ეძლევათ მიღებული შედეგი გამოიყენონ მობილობის მიზნებისათვის.</p>
+        <p class="faq-container-card-dropdown-description">ბაკალავრიატის საფეხურის სახელოვნებო-შემოქმედებით და სასპორტო საგანმანათლებლო პროგრამაზე მობილობის მსურველს, ელექტრონულ პორტალზე რეგისტრაციის ვადის დასრულებამდე, გავლილი უნდა ჰქონდეს დაწესებულების მიერ დადგენილი კონკურსი.  სახელოვნებო-შემოქმედებითი და სასპორტო საგანმანათლებლო პროგრამის შესახებ ინფორმაცია, ასევე, ამ პროგრამებაზე დაწესებულების მიერ განსაზღვრული კონკურსის ტიპის, ვადების და სხვა წინაპირობების თაობაზე, განთავსებულია მობილობის პორტალზე.</p>
+        <p class="faq-container-card-dropdown-description"> სსიპ - დავით აღმაშენებლის სახელობის საქართველოს ეროვნული თავდაცვის აკადემიის სტუდენტებს, რომლებიც 2022 წელს ჩაირიცხნენ აღნიშნულ საგანმანათლებლო დაწესებულებაში და სტატუსი შეუჩერდათ ან/და შეუწყდათ „უმაღლესი განათლების შესახებ“ საქართველოს კანონის 43-ე მუხლის მე-15 პუნქტის „გ“ ქვეპუნქტში მითითებული საფუძვლებით, მობილობის უფლება წარმოეშობათ უმაღლესი განათლების შესაბამის საფეხურზე სწავლის ხანგრძლივობის მიუხედავად.</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">როდის არის უფლებამოსილი სტუდენტი გააკეთოს მობილობის ელექტრონული განაცხადი?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">სსიპ - განათლების მართვის საინფორმაციო სისტემის უფროსის ბრძანებით განსაზღვრულ ვადებში.</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">რა ეტაპები და თანმიმდევრობა უნდა გაიაროს სტუდენტმა მობილობის განხორციელებისათვის?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">სტუდენტმა მობილობისათვის უნდა გაიაროს შემდეგი ეტაპები:</p>
+        <p class="faq-container-card-dropdown-description">გაიაროს რეგისტრაცია მობილობის ელ. პორტალზე</p>
+        <a style="text-decoration: none; color: blue;" href=" https://students.emis.ge/"> https://students.emis.ge/</a>
+        <p class="faq-container-card-dropdown-description">აირჩიოს სასურველი უმაღლესი საგანმანათლებლო დაწესებულების სასურველი პროგრამა/პროგრამები და დაალაგოს პრიორიტეტის მიხედვით (გააკეთოს  მობილობის ელექტრონული განაცხადი);</p>
+        <p class="faq-container-card-dropdown-description">ბაკალავრიატის საფეხურის სახელოვნებო-შემოქმედებით და სასპორტო პროგრამაზე გადასვლის მსურველმა, სტუდენტთა ელექტრონულ პორტალზე რეგისტრაციის ვადის დასრულებამდე, უნდა გაიაროს დაწესებულების მიერ ორგანიზებული კონკურსი, დეტალური ინფორმაციისთვის გაეცნოს პროგრამის შესახებ ინფორმაციას და დაწესებულების web-გვერდს.</p>
+        <p class="faq-container-card-dropdown-description">სტუდენტთა ელექტრონულ პორტალზე რეგისტრაციის ვადის ამოწურვამდე გადაიხადოს მობილობის საფასური (40 ლარი) საქართველოს ბანკის ნებისმიერ სერვისცენტრში, საქართველოს ბანკის თვითმომსახურების ტერმინალებში, საქართველოს ბანკის ინტერნეტბანკის, მობაილბანკის ან bogpay.ge-ს  გადახდის სერვისებით (მენიუში მოძებნეთ: სხვა->განათლება->სტუდენტთა მობილობა);</p>
+        <p class="faq-container-card-dropdown-description">გაეცნოს მობილობის შედეგებს ელექტრონულ პორტალზე პირად სარეგისტრაციო გვერდზე;</p>
+        <p class="faq-container-card-dropdown-description">დადებითი პასუხის შემთხვევაში, დაუყოვნებლივ მიმართოს წერილობითი განცხადებით მიმღებ უმაღლეს საგანმანათლებლო დაწესებულებას და წარუდგინოს პირადი საქმის ასლები;</p>
+        <p class="faq-container-card-dropdown-description">გაეცნოს მიმღები  უმაღლესი საგანმანათლებლო დაწესებულების მიერ აღიარებული კრედიტების შესახებ ინფორმაციას და წერილობითი განცხადებით დაადასტუროს თანხმობა/უარი.</p>
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">რომელი დოკუმენტების საფუძველზე გაიცემა ზოგადი განათლების ატესტატი?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">ზოგადი განათლების ატესტატის მიღების მსურველმა მოქალაქემ განაცხადის გაკეთებისას უნდა წარადგინოს შემდეგი დოკუმენტაცია:</p>
+        <p class="faq-container-card-dropdown-description">1. პირადობის დამადასტურებელი დოკუმენტი (14 წლიდან);</p>
+        <p class="faq-container-card-dropdown-description">2. მოსწავლის მიერ სახელის ან/და გვარის შეცვლის დამადასტურებელი დოკუმენტი (ასეთის არსებობის შემთხვევაში);</p>
+        <p class="faq-container-card-dropdown-description">3. წარმომადგენლობის დამადასტურებელი დოკუმენტი (ასეთის არსებობის შემთხვევაში).</p>
+      
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">სად გაიცემა ზოგადი განათლების ატესტატი?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">ზოგადი განათლების დამადასტურებელი სახელმწიფო დოკუმენტები განათლების მართვის საინფორმაციო სისტემის მონაცემთა ბაზის საფუძველზე, გაიცემა სახელმწიფო სერვისების განვითარების სააგენტოს ნებისმიერ ფილიალში ან იუსტიციის სახლში.</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">როგორ ხდება პროფესიული განათლების მიღების მსურველთა სარეგისტრაციო სისტემაში (vet.emis.ge) რეგისტრირებული აპლიკანტის საკონტაქტო ნომრის ცვლილება?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">სისტემაში რეგისტრირებულმა აპლიკანტმა, საკონტაქტო ნომრის ცვლილების შემთხვევაში უნდა მიმართოს განათლების მართვის საინფორმაციო სისტემას წერილობითი ფორმით შემდეგ ელ.ფოსტაზე (info&#64;emis.ge;) და განაცხადს თან დაურთოს პირადობის დამადასტურებელი დოკუმენტი. ან დაგვიკავშირდეს ცხელ ხაზზე: 2 200 220.</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">რა შეღავათებით და მომსახურებით სარგებლობს პროფესიულის სტუდენტი?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">პროფესიულ სტუდენტს, პროფესიული საგანმანათლებლო პროგრამის განხორციელების ადგილის შესაბამისად, შეღავათიანი სამგზავრო ბარათით სარგებლობა შეუძლია შემდეგ ქალაქებში: თბილისი, რუსთავი, თელავი, ქუთაისი, ზუგდიდი, ფოთი, ბათუმი.
+        </p>
+        <p class="faq-container-card-dropdown-description">თბილისის, რუსთავის, ზუგდიდისა და ბათუმის შემთხვევაში სამგზავრო ბარათთან დაკავშირებით პროფესიულმა სტუდენტმა უნდა მიმართოს საქართველოს ბანკის ფილიალებს;
+
+            სხვა შემთხვევაში - თიბისი ბანკის სერვის-ცენტრებს.</p>
+        <p class="faq-container-card-dropdown-description">პროფესიულ სტუდენტს, რომელიც მოიპოვებს აქტიურ სტატუსს, შესაძლებლობა ექნება ჯანდაცვის სერვისით სარგებლობის (სტუდენტური დაზღვევით).</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">როგორ გამოვიყენო პირველკლასელთა ბუკები?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">ელექტრონული რესურსების პორტალ EL.ge-ზე განთავსებულია პირველკლასელთა ბუკების გამოყენების დეტალური ინსტრუქცია:</p>
+        <p class="faq-container-card-dropdown-description">https://el.ge/articles/microsoft/category/471?microsoft_only=1</p>
+        <p class="faq-container-card-dropdown-description">პაროლის დაკარგვის შემთხვევაში, აღდგენას შეძლებთ საიტზე</p>
+        <a style="text-decoration: none; color: blue;" href=" https://reset.emis.ge"> https://reset.emis.ge</a>
+        <p class="faq-container-card-dropdown-description">ნებისმიერი ტექნიკური ხარვეზის შემთხვევაში მიმართეთ სერვისცენტრს - 0 32 2 220 505</p>
+        <p class="faq-container-card-dropdown-description">„ბუკში“ უკვე ჩაწერილი თამაშების და პროგრამების ინსტრუქციები ნახეთ ბმულზე:</p>
+        <a style="text-decoration: none; color: blue;" href="http://buki.ge/">http://buki.ge/</a>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">როგორ გამოვიყენო ელეტრონული ჟურნალი?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">ელექტრონული ჟურნალი წარმოადგენს სკოლის პერსონალისთვის კლასების მიხედვით მოსწავლეების შეფასების და დასწრების, აღრიცვის სიტემას. ონლაინ სკოლით სარგებლობა შეუძლიათ მოსწავლეებს და მათ მშობელს/მეურვეს, რომლებსაც წვდომა აქვთ მხოლოდ ინდივიდუალური მოსწავლის მონაცემებზე.  ავტორიზაციისთვის მომხმარებელი შედის შემდეგ ელექტრონულ მისამართზე: Onlineschool.Emis.Ge </p>
+        <p class="faq-container-card-dropdown-description">მასწავლებლისავტორიზაცია  -</p>
+        
+        <a style="text-decoration: none; color: blue;" href="https://www.youtube.com/watch?v=dokvg1aY3aw">https://www.youtube.com/watch?v=dokvg1aY3aw</a>
+        <p class="faq-container-card-dropdown-description">მოსწავლის ავტორიზაცია  -</p>
+        <a style="text-decoration: none; color: blue;" href="https://www.youtube.com/watch?v=XTRHKoBoLoI">https://www.youtube.com/watch?v=XTRHKoBoLoI</a>
+        <p class="faq-container-card-dropdown-description">მშობლის ავტორიზაცია -</p>
+        <a style="text-decoration: none; color: blue;" href=" https://www.youtube.com/watch?v=XFEA0RYbIfM">https://www.youtube.com/watch?v=XFEA0RYbIfM</a>
+        <p class="faq-container-card-dropdown-description">ელექტრონული ჟურნალი შექმინილია საქართველოში არსებული საჯარო სკოლებისთვის, რომელიც უკვე 3 წელია სკოლის დირექტორებს, მოსწავლეებს, მშობლებსა და მასწავლებლებს ერთმანეთთან კომუნიკაციის პროცესებს მნიშვნელოვნად უმარტივებს.</p>
+        <p class="faq-container-card-dropdown-description">ელექტრონულ ჟურნალთან დაკავშირებით დახმარებისთვის მიმართეთ  ჯგუფს- „Microsoft Office 365 დისტანციური სწავლისთვის საქართველოში“: </p>
+        <a style="text-decoration: none; color: blue;" href="https://www.facebook.com/groups/1310839255766955">https://www.facebook.com/groups/1310839255766955  </a>
+        <p class="faq-container-card-dropdown-description">ან მოგვწერეთ ელექტრონულ მისამართზე:</p>
+        <a style="text-decoration: none; color: blue;" href=" onlineschool@emis.ge."> onlineschool&#64;emis.ge.</a>
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">რა შემთხვევაში ხდება გრანტის დაკარგვა/შეზღუდვა?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">სტუდენტის  გრანტი უქმდება სტუდენტის სტატუსის შეჩერებიდან/შეწყვეტიდან 5 წლის გასვლის შემდეგ</p>
+        <p class="faq-container-card-dropdown-description">სტუდენტს მოპოვებული გრანტით სარგებლობის უფლება ეზღუდება არააკრედიტებულ პროგრამაზე სწავლის გაგრძელების შემთხვევაში</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">როგორ ხდება სახელმწიფო გრანტის გადატანა?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">სტუდენტის მიერ მოპოვებული გრანტის გადატანა შესაძლებელია მხოლოდ აკრედიტებულ  პროგრამაზე.</p>
+        <p class="faq-container-card-dropdown-description">სტუდენტს მოპოვებული გრანტი გადაყვება  დარჩენილი წლების ოდენობით.</p>
+        <p class="faq-container-card-dropdown-description">მობილობის განხორციელების შემდგომ, სტუდენტს, აკრედიტებულ პროგრამაზე გრანტი გადაყვება ავტომატურად, რისთვისაც დამატებით განცხადებით მომართვა საჭირო არ არის.</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">რამდენი არჩევანის დაფიქსირება შეუძლია სტუდენტს მობილობის ელექტრონულ განაცხადში?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">მობილობის მსურველს შეუძლია პორტალზე აირჩიოს და დაარეგისტრიროს ცალ-ცალკე, პრიორიტეტების მიხედვით, არაუმეტეს 5 ხუთი საგანმანათლებლო პროგრამა, გარდა სახელოვნებო-შემოქმედებით და სასპორტო საგანმანათლებლო პროგრამაზე მობილობის შემთხვევისა.</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">რომელი პორტალის საშუალებით ხორციელდება მობილობის კონკურსი?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">მობილობის კონკურსი ხორციელდება ონლაინ ელექტრონული პორტალის საშუალებით: students.emis.ge</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">როგორ გამოვიყენოთ სკოლების პორტალი ?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">სკოლების პორტალის შექმნის მიზანია, ყველა საჯარო სკოლის შესახებ ინფორმაციის გაერთიანება და ერთ სივრცეში თავმოყრა. პორტალზე ყოველ ცალკეულ სკოლას გამოყოფილი ექნება საკუთარი ვებ გვერდი, რომელშიც ინფორმაციის განთავსებასა და განახლებაზე თავად სკოლა იქნება პასუხისმგებელი. სკოლის გვერდზე ზოგადი ხასიათის ინფორმაციის ასახვა მოხდება ზოგადი განათლების მართვის საინფორმაციო სისტემიდან (Eschool.emis.ge).</p>
+       
+      </div>
+    </div>
+    <div class="faq-container-card" (click)="toggleDropdown($event)">
+        <div class="faq-container-title-and-icon-side">
+            <h1 class="faq-container-card-title">რას საქმიანობს განათლების მართვის საინფორმაციო სისტემა?</h1>
+            <div class="faq-container-card-icon">
+                <i class="bi" [ngClass]="{'bi-chevron-down': !isActive, 'bi-chevron-up': isActive}"></i>
+            </div>
+        </div> 
+      <div class="faq-container-card-dropdown">
+        <p class="faq-container-card-dropdown-description">განათლების მართვის საინფორმაციო სისტემა (EMIS) 2012 წელს შეიქმნა. EMIS-ის მისიას წარმოადგენს განათლების სფეროში თანამედროვე ინფორმაციულ – საკომუნიკაციო ტექნოლოგიების დანერგვა, მათი მონიტორინგი/შეფასება და ხელმისაწვდომობის უზრუნველყოფა. ამასთან პროფესიული საგანმანათლებლო საქმიანობის განხორციელების გზით, ინფორმაციული ტექნოლოგიების სფეროში, მაღალკვალიფიციური კადრების მომზადება/გადამზადება, ასევე ახალი ელექტრონული მართვის სისტემებისა და ბაზების შექმნა.</p>
+       
+      </div>
+    </div>
+    
+
+
+
+
+  </div>
+  
+</div>
+<app-footer></app-footer>

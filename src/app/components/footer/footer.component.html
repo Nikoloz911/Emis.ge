@@ -1,0 +1,53 @@
+<footer class="footer">
+    <div class="footer-left-and-right-side-container">
+        <div class="footer-left-side">
+            <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d937.8647222550082!2d44.767341878579714!3d41.73055199025424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472e73ac8b2d9%3A0x59b3fdeb0c974075!2zRU1JUywg4YOS4YOQ4YOc4YOQ4YOX4YOa4YOU4YOR4YOY4YOhIOGDm-GDkOGDoOGDl-GDleGDmOGDoSDhg6Hhg5Dhg5jhg5zhg6Thg53hg6Dhg5vhg5Dhg6rhg5jhg50g4YOh4YOY4YOh4YOi4YOU4YOb4YOQ!5e0!3m2!1ska!2sge!4v1724414899726!5m2!1ska!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-right-side">
+            <h1 class="footer-title">დაგვიკავშირდით</h1>
+            <div class="footer-address-data-container">
+              <i style="font-size: 20px;" class="bi bi-geo-alt-fill"></i>
+              <p>{{ address }}</p>
+            </div>
+            <div class="footer-open-time-data-container">
+              <i style="font-size: 20px;" class="bi bi-clock"></i>
+              <p>{{ openStatus }}</p>
+            </div>
+            <div class="footer-number-data-container">
+                <a class="footer-phone-link" href="tel:032 220 02 20">
+              <i style="font-size: 20px;" class="bi bi-telephone"></i>
+              <p>{{ phone }}</p>
+            </a>
+            </div>
+            <div class="footer-email-data-container">
+                <a class="footer-mail-link" href="mailto:info@emis.ge">
+              <i style="font-size: 20px;" class="bi bi-envelope"></i>
+              <p>{{ email }}</p>
+            </a>
+            </div>
+            <div class="footer-links-container">
+              <a class="footer-link-facebook" *ngIf="socials.facebook" [href]="socials.facebook" target="_blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a class="footer-link-youtube" *ngIf="socials.youtube" [href]="socials.youtube" target="_blank">
+                <i class="bi bi-youtube"></i>
+              </a>
+            
+            </div>
+          </div>
+          
+    </div>
+
+<div class="footer-bottom-side">
+      <img class="footer-image" src="https://www.emis.ge/assets/svg/emisLogo.svg" alt="Emis-Logo">
+      <p class="footer-bottom-side-title">2023 ყველა უფლება დაცულია</p>
+      <div class="footer-bottom-side-container">
+        <p>Copyright</p>     
+        <i class="bi bi-c-circle"></i>
+        <p>Emis 2024</p>
+      </div>
+</div>
+
+  
+
+</footer>

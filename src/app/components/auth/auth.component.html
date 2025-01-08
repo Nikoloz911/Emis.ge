@@ -1,0 +1,111 @@
+<div class="body">
+  <div class="auth-page">
+    <div class="auth-page-left-side">
+      <div class="auth-page-left-side-image-and-title-container">
+        <img
+          class="auth-page-left-side-image"
+          src="https://onlineschool.emis.ge/assets/svg_icons/logo.svg#Layer_1"
+          alt="Image"
+        />
+        <p class="image-title">ონლაინ სკოლა</p>
+      </div>
+
+      <div class="auth-page-container">
+        <h1 class="auth-page-container-title">ავტორიზაცია</h1>
+
+        <form (ngSubmit)="onSubmit()">
+          <div>
+            <input
+              id="username"
+              class="user-name"
+              type="text"
+              placeholder="მომხმარებლის სახელი"
+            />
+          </div>
+          <div *ngIf="usernameError" class="error-text">
+            შეიყვანეთ მომხმარებლის სახელი და პაროლი
+          </div>
+          <div>
+            <input
+              id="password"
+              class="password"
+              type="password"
+              placeholder="პაროლი"
+            />
+          </div>
+
+          <button type="submit" class="log-in-button">შესვლა</button>
+        </form>
+
+        <button class="recovery-button">პაროლის აღდგენა</button>
+        <button class="cube-button" (click)="toggleModal()">i</button>
+        <button
+          id="show-password-button"
+          class="show-password-button"
+          (click)="togglePasswordVisibility()"
+        >
+          <i
+            class="bi"
+            [ngClass]="isPasswordVisible ? 'bi-eye-slash-fill' : 'bi-eye-fill'"
+          ></i>
+        </button>
+        <div id="auth-page-modal-cube" class="auth-page-modal-cube">
+          <p class="auth-page-modal-cube-text">
+            მომხმარებლის სახელში მასწავლებლის, ან მოსწავლის შემთხვევაში მიუთითეთ
+            თქვენი მომხმარებლის სახელი (Microsoft 365), ხოლო მშობლის შემთხვევაში
+            პირადი ნომერი
+          </p>
+          <button id="close-modal-button" class="close-modal-button">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+        <div id="triangle" class="triangle"></div>
+
+        <div id="error-cube" class="error-cube">
+          <div class="error-cube-content">
+            <i
+              style="color: red; font-size: 40px; margin-left: 50px"
+              class="bi bi-exclamation-circle"
+            ></i>
+            <p style="font-weight: 600;" class="error-message">რაღაც საიტი</p>
+            <div id="x-cube" class="x-cube"><i class="bi bi-x-lg"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <button class="registration-button"(click)="goToRegistration()">მშობლის რეგისტრაცია</button>
+
+      <div class="auth-page-footer">
+        <div class="auth-page-footer-links-container">
+          <a class="auth-page-footer-link" href="tel:+995322200220">
+            <i
+              style="color: rgb(0, 157, 255); font-size: 20px"
+              class="bi bi-telephone"
+            ></i>
+            <p>(995 32) 2 200 220</p>
+          </a>
+        </div>
+        <!-- COPYING -->
+        <div class="auth-page-footer-links-container">
+          <a
+            class="auth-page-footer-link"
+            href="mailto:onlineschools&#64;emis.ge"
+          >
+            <i
+              style="color: rgb(0, 157, 255); font-size: 20px"
+              class="bi bi-envelope"
+            ></i>
+            <p>onlineschool&#64;emis.ge</p>
+          </a>
+        </div>
+        <!-- COPYING -->
+      </div>
+    </div>
+
+    <img
+      class="auth-page-image"
+      src="https://onlineschool.emis.ge/assets/svg_icons/art-board.svg#Layer_1"
+      alt="Image"
+    />
+  </div>
+</div>

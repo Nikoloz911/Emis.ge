@@ -1,0 +1,442 @@
+.body {
+  background-color: #181818;
+  height: 650px;
+}
+.body .home-test-mode-container {
+  border: solid 2px #313131;
+  height: 50px;
+  width: 1340px;
+  border-top: solid 1px rgba(49, 49, 49, 0);
+  z-index: 700;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.body .home-test-mode-container .home-test-mode-container-text {
+  color: #d4d4d4;
+  text-align: center;
+  font-size: 14px;
+}
+.body .posts-page-title-side {
+  height: 100%;
+  width: 800px;
+  margin-left: 500px;
+  height: 100px;
+  text-align: center;
+}
+.body .posts-page-title-side .posts-page-title {
+  color: #fff;
+  font-size: 25px;
+  width: 730px;
+}
+.body .posts-page-title-side .posts-page-blue-line {
+  background-color: rgb(0, 98, 255);
+  width: 100px;
+  height: 5px;
+  margin-left: 320px;
+}
+.body .general-education-container {
+  margin-left: 200px;
+  margin-right: 200px;
+  width: 1340px;
+  height: 400px;
+}
+.body .general-education-container .services-container {
+  height: 200px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.body .general-education-container .services-container .no-data-container {
+  width: 400px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.body .general-education-container .services-container .no-data-container .no-data-cube {
+  background-color: #dcdcdc;
+  border-radius: 10px;
+  color: blue;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body .general-education-container .services-container .no-data-container .no-data-container-title {
+  color: #fff;
+  font-size: 20px;
+  opacity: 0.4;
+  font-weight: 900;
+}
+.body .general-education-container .general-education-container-title-side {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.body .general-education-container .general-education-container-title-side .general-education-link {
+  text-decoration: none;
+}
+.body .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card {
+  border-radius: 5px;
+  background-color: #272335;
+  width: 230px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.body .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card .general-education-container-title {
+  color: #c1c1c1;
+  opacity: 0.6;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.body .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card:hover {
+  box-shadow: 0px 5px 6px rgba(0, 92, 232, 0.75);
+  -webkit-box-shadow: 0px 5px 6px rgba(0, 92, 232, 0.75);
+  -moz-box-shadow: 0px 5px 6px rgba(0, 92, 232, 0.75);
+}
+.body .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card-main {
+  border-radius: 5px;
+  background-color: #272335;
+  width: 230px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 6px rgba(0, 92, 232, 0.75);
+  -webkit-box-shadow: 0px 5px 6px rgba(0, 92, 232, 0.75);
+  -moz-box-shadow: 0px 5px 6px rgba(0, 92, 232, 0.75);
+}
+.body .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card-main .general-education-container-title {
+  color: #c1c1c1;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+:host-context([data-theme=light]) .body {
+  background-color: #fff;
+}
+:host-context([data-theme=light]) .home-test-mode-container {
+  border: solid 2px transparent;
+  background-color: rgb(222, 232, 255);
+}
+:host-context([data-theme=light]) .home-test-mode-container .home-test-mode-container-text {
+  color: #6460d8;
+}
+:host-context([data-theme=light]) .posts-page-title-side .posts-page-title {
+  color: #000;
+}
+:host-context([data-theme=light]) .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card {
+  background-color: #fff;
+  box-shadow: 0px 2px 2px 2px rgba(104, 104, 104, 0.75);
+  -webkit-box-shadow: 0px 2px 2px 2px rgba(97, 97, 97, 0.75);
+  -moz-box-shadow: 0px 2px 2px 2px rgba(92, 92, 92, 0.75);
+}
+:host-context([data-theme=light]) .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card .general-education-container-title {
+  color: #000;
+}
+:host-context([data-theme=light]) .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card:hover {
+  color: rgb(0, 98, 255);
+  box-shadow: 0px 4px 4px 4px rgba(104, 104, 104, 0.75);
+  -webkit-box-shadow: 0px 4px 4px 4px rgba(97, 97, 97, 0.75);
+  -moz-box-shadow: 0px 4px 4px 4px rgba(92, 92, 92, 0.75);
+}
+:host-context([data-theme=light]) .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card-main {
+  background-color: #fff;
+  box-shadow: 0px 2px 2px 2px rgba(104, 104, 104, 0.75);
+  -webkit-box-shadow: 0px 2px 2px 2px rgba(97, 97, 97, 0.75);
+  -moz-box-shadow: 0px 2px 2px 2px rgba(92, 92, 92, 0.75);
+}
+:host-context([data-theme=light]) .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card-main .general-education-container-title {
+  color: rgb(0, 98, 255);
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-card .general-education-card-image {
+  opacity: 1;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-card .generals-card-text {
+  color: #fff;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-card .generals-card-bottom-side {
+  opacity: 0;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-card .generals-card-bottom-side .generals-card-bottom-side-text {
+  color: #fff;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-card .generals-card-bottom-side .generals-card-icon {
+  color: #fff;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-card:hover .generals-card-bottom-side {
+  opacity: 1;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-card:hover .general-education-card-image {
+  opacity: 0.9;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-body-side-container .generals-second-card .generals-second-card-text {
+  color: #fff;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-body-side-container .generals-second-card .generals-education-second-card-image {
+  opacity: 1;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-body-side-container .generals-second-card .generals-second-card-bottom-side .generals-second-card-bottom-side-text {
+  color: #fff;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-body-side-container .generals-second-card .generals-second-card-bottom-side .generals-second-card-icon {
+  color: #fff;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-body-side-container .generals-second-card .generals-second-third-bottom-side {
+  opacity: 0;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-body-side-container .generals-second-card .generals-second-third-bottom-side .generals-second-card-bottom-side-text {
+  color: #fff;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-body-side-container .generals-second-card .generals-second-third-bottom-side .generals-second-card-icon {
+  color: #fff;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-body-side-container .generals-second-card:hover .generals-second-third-bottom-side {
+  opacity: 1;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-body-side-container .generals-second-card:hover .generals-second-card-bottom-side {
+  opacity: 0.9;
+}
+:host-context([data-theme=light]) .general-education-container .generals-container-body-side .generals-body-side-container .generals-second-card:hover .generals-education-second-card-image {
+  opacity: 0.9;
+}
+:host-context([data-theme=light]) .general-education-container .services-container .no-data-container .no-data-container-title {
+  color: #000;
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  :host-context([data-theme=light]) .body {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  :host-context([data-theme=light]) .body .home-test-mode-container {
+    width: 720px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  :host-context([data-theme=light]) .body .posts-page-title-side {
+    height: 100%;
+    width: 200px;
+    margin-left: 340px;
+    height: 100px;
+    text-align: center;
+  }
+  :host-context([data-theme=light]) .body .posts-page-title-side .posts-page-title {
+    font-size: 20px;
+    width: 100px;
+  }
+  :host-context([data-theme=light]) .body .posts-page-title-side .posts-page-blue-line {
+    width: 100px;
+    height: 5px;
+    margin-left: 1px;
+  }
+  :host-context([data-theme=light]) .body .general-education-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 720px;
+    height: auto;
+  }
+  :host-context([data-theme=light]) .body .general-education-container .general-education-container-title-side {
+    height: 100px;
+    display: flex;
+    width: 720px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-left: 10px;
+  }
+  :host-context([data-theme=light]) .body .general-education-container .general-education-container-title-side::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  :host-context([data-theme=light]) .body {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  :host-context([data-theme=light]) .body .home-test-mode-container {
+    width: 440px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  :host-context([data-theme=light]) .body .posts-page-title-side {
+    height: 100%;
+    width: 200px;
+    margin-left: 190px;
+    height: 100px;
+    text-align: center;
+  }
+  :host-context([data-theme=light]) .body .posts-page-title-side .posts-page-title {
+    font-size: 20px;
+    width: 100px;
+  }
+  :host-context([data-theme=light]) .body .posts-page-title-side .posts-page-blue-line {
+    width: 100px;
+    height: 5px;
+    margin-left: 1px;
+  }
+  :host-context([data-theme=light]) .body .general-education-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 440px;
+    height: auto;
+  }
+  :host-context([data-theme=light]) .body .general-education-container .general-education-container-title-side {
+    height: 100px;
+    display: flex;
+    width: 440px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-left: 10px;
+  }
+  :host-context([data-theme=light]) .body .general-education-container .general-education-container-title-side::-webkit-scrollbar {
+    display: none;
+  }
+  :host-context([data-theme=light]) .body .general-education-container .general-education-container-title-side .general-education-link {
+    text-decoration: none;
+  }
+  :host-context([data-theme=light]) .body .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card,
+  :host-context([data-theme=light]) .body .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card-main {
+    width: 180px;
+    height: 50px;
+  }
+  :host-context([data-theme=light]) .body .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card .general-education-container-title,
+  :host-context([data-theme=light]) .body .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card-main .general-education-container-title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .body {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  .body .home-test-mode-container {
+    width: 720px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .body .posts-page-title-side {
+    height: 100%;
+    width: 200px;
+    margin-left: 340px;
+    height: 100px;
+    text-align: center;
+  }
+  .body .posts-page-title-side .posts-page-title {
+    font-size: 20px;
+    width: 100px;
+  }
+  .body .posts-page-title-side .posts-page-blue-line {
+    width: 100px;
+    height: 5px;
+    margin-left: 1px;
+  }
+  .body .general-education-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 720px;
+    height: auto;
+  }
+  .body .general-education-container .general-education-container-title-side {
+    height: 100px;
+    display: flex;
+    width: 720px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-left: 10px;
+  }
+  .body .general-education-container .general-education-container-title-side::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .body {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  .body .home-test-mode-container {
+    width: 440px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .body .posts-page-title-side {
+    height: 100%;
+    width: 200px;
+    margin-left: 190px;
+    height: 100px;
+    text-align: center;
+  }
+  .body .posts-page-title-side .posts-page-title {
+    font-size: 20px;
+    width: 100px;
+  }
+  .body .posts-page-title-side .posts-page-blue-line {
+    width: 100px;
+    height: 5px;
+    margin-left: 1px;
+  }
+  .body .general-education-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 440px;
+    height: auto;
+  }
+  .body .general-education-container .general-education-container-title-side {
+    height: 100px;
+    display: flex;
+    width: 440px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-left: 10px;
+  }
+  .body .general-education-container .general-education-container-title-side::-webkit-scrollbar {
+    display: none;
+  }
+  .body .general-education-container .general-education-container-title-side .general-education-link {
+    text-decoration: none;
+  }
+  .body .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card,
+  .body .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card-main {
+    width: 180px;
+    height: 50px;
+  }
+  .body .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card .general-education-container-title,
+  .body .general-education-container .general-education-container-title-side .general-education-link .general-education-title-side-card-main .general-education-container-title {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=service-other.component.css.map */

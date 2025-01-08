@@ -1,0 +1,525 @@
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+@mixin ProductsServiceResponsive480px{
+  .body{
+   height: auto;
+   padding-bottom: 100px;
+     .home-test-mode-container {
+       width: 440px;
+       margin-top: 80px;
+       margin-left: 20px;
+       margin-right: 20px;
+     } 
+     .posts-page-title-side {
+       height: 100%;
+       width: 200px;
+       margin-left: 190px;
+       height: 100px;
+       text-align: center;
+       .posts-page-title {
+         font-size: 20px;
+         width: 100px;
+       }
+       .posts-page-blue-line {
+         width: 100px;
+         height: 5px;
+         margin-left: 1px;
+       }
+     }
+   .general-education-container {
+     margin-left: 20px;
+     margin-right: 20px;
+     width: 440px;
+     height: auto;
+     .services-container {
+       height: auto;
+       gap: 40px;
+       .posts-page-products-card-link {
+         text-decoration: none;
+         .posts-page-products-card {
+           width: 420px;
+           height: 140px;
+           padding: 10px;
+           .posts-page-card-left-side {
+             padding: 5px;
+           }
+           .posts-page-card-right-side {
+             .posts-page-card-date {
+               font-size: 15px;
+             }
+             .posts-page-card-title {
+              height: auto;
+               font-size: 16px;
+             }
+             .posts-page-card-description {
+              display: none;
+             }
+             .posts-page-card-link-container {
+               display: none;
+             }
+           }
+         }
+       }
+     }
+     .general-education-container-title-side {
+       height: 100px;
+       display: flex;
+       width: 440px; 
+       justify-content: flex-start; 
+       align-items: center;
+       gap: 20px;
+       overflow-x: auto; 
+       scroll-behavior: smooth;
+       scrollbar-width: none;
+       -ms-overflow-style: none;
+       padding-left: 10px; 
+       &::-webkit-scrollbar {
+         display: none; 
+       }
+     
+       .general-education-link {
+         text-decoration: none;
+         .general-education-title-side-card, 
+         .general-education-title-side-card-main {
+           width: 180px;
+           height: 50px;
+           .general-education-container-title {
+             font-size: 14px;
+           }
+         }
+       }
+     }
+     
+   }
+  }
+ }
+ /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+ /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+ /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+ /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+ @mixin ProductsServiceResponsive768px{
+   .body{
+     height: auto;
+     padding-bottom: 100px;
+       .home-test-mode-container {
+         width: 720px;
+         margin-top: 80px;
+         margin-left: 20px;
+         margin-right: 20px;
+       } 
+       .posts-page-title-side {
+         height: 100%;
+         width: 200px;
+         margin-left: 340px;
+         height: 100px;
+         text-align: center;
+         .posts-page-title {
+           font-size: 20px;
+           width: 100px;
+         }
+         .posts-page-blue-line {
+           width: 100px;
+           height: 5px;
+           margin-left: 1px;
+         }
+       }
+     .general-education-container {
+       margin-left: 20px;
+       margin-right: 20px;
+       width: 720px;
+       height: auto;
+       .services-container {
+         height: auto;
+         gap: 40px;
+         .posts-page-products-card-link {
+           text-decoration: none;
+           .posts-page-products-card {
+             width: 700px;
+             height: 250px;
+             padding: 10px;
+             .posts-page-card-left-side {
+               padding: 5px;
+             }
+             .posts-page-card-right-side {
+               .posts-page-card-date {
+                 font-size: 17px;
+               }
+               .posts-page-card-title {
+                height: auto;
+                 font-size: 17px;
+               }
+               .posts-page-card-description {
+                 height: 78px;
+                 margin-top: 1px;
+                 overflow: hidden;
+               }
+               .posts-page-card-link-container {
+                 margin-top: 1px;
+                 height: 30px;
+               }
+             }
+           }
+         }
+       }
+       .general-education-container-title-side {
+         height: 100px;
+         display: flex;
+         width: 720px; 
+         justify-content: flex-start; 
+         align-items: center;
+         gap: 20px;
+         overflow-x: auto; 
+         scroll-behavior: smooth;
+         scrollbar-width: none;
+         -ms-overflow-style: none;
+         padding-left: 10px; 
+         &::-webkit-scrollbar {
+           display: none; 
+         }
+       }
+       
+     }
+    }
+ }
+ /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+ /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+.body{
+    background-color: #181818;
+    height: 700px;
+ 
+     ///  COPYING STYLES  ///
+     /// NAV-BAR kind of part ///
+  .home-test-mode-container{
+    border: solid 2px #313131;
+    height: 50px;
+    width: 1340px;
+    border-top: solid 1px #31313100;
+    z-index: 700;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    .home-test-mode-container-text{
+      color: #d4d4d4;
+      text-align: center;
+      font-size: 14px;
+    }
+  }     /// NAV-BAR kind of part ///
+  .posts-page-title-side{
+    height: 100%;
+    width: 800px;
+    margin-left: 500px;
+    height: 100px;
+    text-align: center;
+    .posts-page-title{
+        color: #fff;
+        font-size: 25px;
+        width: 730px;
+       }
+       .posts-page-blue-line{
+        background-color: rgb(0, 98, 255);
+        width: 100px;
+        height: 5px;
+        margin-left: 320px;
+       }
+}
+/// COPYING STYLES ///
+.general-education-container{
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 1340px;
+    height: 540px;  
+    .services-container{
+  height: 260px;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  /// COPYING STYLES FROM POSTS PAGE FOR CARD ///
+    .posts-page-products-card-link{
+  text-decoration: none;   
+  .posts-page-products-card{
+ background-color: #282828;
+ border: solid 1px #282828;
+ border-radius: 10px;
+width: 640px;
+height: 250px;
+display: flex;
+&:hover{
+ .posts-page-card-right-side{ 
+     .posts-page-card-title{
+         color: #4e4eff;
+     }
+ }     
+}
+.posts-page-card-left-side{
+width: 35%;
+height: 90%;
+padding: 10px;
+overflow: hidden;
+   .posts-page-card-image{
+border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+   }
+}
+.posts-page-card-right-side{
+ width: 65%;
+ height: 100%;
+ margin-left: 10px;
+ .posts-page-card-date{
+color: #777a8d;
+     font-weight: 600;
+ }
+ .posts-page-card-title{
+     color: #c5c5c5;
+     font-size: 15px;
+     transition: 500ms;
+     height: 40px;
+     overflow: hidden;
+ }
+ .posts-page-card-description{
+     color: #b0b0b0;
+     font-size: 14px;
+     height: 75px;
+     overflow: hidden;
+     margin-right: 20px;
+ }
+ .posts-page-card-link-container{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     color: rgb(100, 100, 100);
+     transition: 500ms;
+     width: 180px;
+     justify-content: center;
+     margin-left: 230px;
+     .posts-page-card-link{          
+         font-size: 14px;           
+         margin-top: 20px;          
+     }
+     &:hover{
+         color: #4e4eff; 
+     }
+ }
+
+}
+}
+}
+
+  /// COPYING STYLE FROM POSTS PAGE FOR CARD ///
+    }
+    .general-education-container-title-side{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .general-education-link{
+        text-decoration: none;
+        .general-education-title-side-card{
+            border-radius: 5px;
+            background-color: #272335;
+            width: 230px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 500ms;
+            .general-education-container-title{
+                color: #c1c1c1;
+                opacity: 0.6;
+                font-weight: 900;
+                margin-bottom: 20px;
+            }
+            &:hover{
+              box-shadow: 0px 5px 6px rgba(0, 92, 232, 0.75); 
+              -webkit-box-shadow: 0px 5px 6px rgba(0, 92, 232, 0.75);
+              -moz-box-shadow: -0px 5px 6px rgba(0, 92, 232, 0.75);
+            }
+        }
+        .general-education-title-side-card-main{
+          border-radius: 5px;
+          background-color: #272335;
+          width: 230px;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0px 5px 6px rgba(0, 92, 232, 0.75); 
+          -webkit-box-shadow: 0px 5px 6px rgba(0, 92, 232, 0.75);
+          -moz-box-shadow: -0px 5px 6px rgba(0, 92, 232, 0.75);
+          .general-education-container-title{
+              color: #c1c1c1;
+              font-weight: 900;
+              margin-bottom: 20px;
+          }
+      }
+    }
+   
+    }
+}
+/// COPYING STYLES ///
+
+
+}
+
+
+/// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE/// LIGHT MODE
+:host-context([data-theme="light"]) {
+  .body {
+    background-color: #fff;
+  }
+  /// TEST MODE CONTAINER LIGHT MODE STYLES ///
+
+  .home-test-mode-container {
+    border: solid 2px transparent;
+
+    background-color: rgb(222, 232, 255);
+
+    .home-test-mode-container-text {
+      color: #6460d8;
+    }
+  }
+  /// TEST MODE CONTAINER LIGHT MODE STYLES ///
+
+  .posts-page-title-side {
+    .posts-page-title {
+      color: #000;
+    }
+  }
+  .general-education-container {
+    .general-education-container-title-side {
+      .general-education-link {
+        .general-education-title-side-card {
+          background-color: #fff;
+
+          .general-education-container-title {
+            color: #000;
+          }
+
+          box-shadow: 0px 2px 2px 2px rgba(104, 104, 104, 0.75);
+          -webkit-box-shadow: 0px 2px 2px 2px rgba(97, 97, 97, 0.75);
+          -moz-box-shadow: -0px 2px 2px 2px rgba(92, 92, 92, 0.75);
+          &:hover {
+            color: rgb(0, 98, 255); ///
+            box-shadow: 0px 4px 4px 4px rgba(104, 104, 104, 0.75);
+            -webkit-box-shadow: 0px 4px 4px 4px rgba(97, 97, 97, 0.75);
+            -moz-box-shadow: -0px 4px 4px 4px rgba(92, 92, 92, 0.75);
+          }
+        }
+        .general-education-title-side-card-main {
+          background-color: #fff;
+
+          .general-education-container-title {
+            color: rgb(0, 98, 255);
+          }
+
+          box-shadow: 0px 2px 2px 2px rgba(104, 104, 104, 0.75);
+          -webkit-box-shadow: 0px 2px 2px 2px rgba(97, 97, 97, 0.75);
+          -moz-box-shadow: -0px 2px 2px 2px rgba(92, 92, 92, 0.75);
+        }
+      }
+    }
+    .generals-container-body-side {
+      .generals-card {
+        .general-education-card-image {
+          opacity: 1;
+        }
+        .generals-card-text {
+          color: #fff;
+        }
+        .generals-card-bottom-side {
+          opacity: 0;
+          .generals-card-bottom-side-text {
+            color: #fff;
+          }
+          .generals-card-icon {
+            color: #fff;
+          }
+        }
+        &:hover {
+          .generals-card-bottom-side {
+            opacity: 1;
+          }
+          .general-education-card-image {
+            opacity: 0.9;
+          }
+        }
+      }
+      .generals-body-side-container {
+        .generals-second-card {
+          .generals-second-card-text {
+            color: #fff;
+          }
+          .generals-education-second-card-image {
+            opacity: 1;
+          }
+          .generals-second-card-bottom-side {
+            .generals-second-card-bottom-side-text {
+              color: #fff;
+            }
+            .generals-second-card-icon {
+              color: #fff;
+            }
+          }
+          .generals-second-third-bottom-side {
+            opacity: 0;
+            .generals-second-card-bottom-side-text {
+              color: #fff;
+            }
+            .generals-second-card-icon {
+              color: #fff;
+            }
+          }
+          &:hover {
+            .generals-second-third-bottom-side {
+              opacity: 1;
+            }
+            .generals-second-card-bottom-side {
+              opacity: 0.9;
+            }
+            .generals-education-second-card-image {
+              opacity: 0.9;
+            }
+          }
+        }
+      }
+    }
+    .services-container {
+      .posts-page-products-card-link {
+        .posts-page-products-card {
+          background-color: #fff;
+          border: solid 1px #d4d4d4;
+
+          .posts-page-card-right-side {
+            .posts-page-card-date {
+              color: #4f536c;
+            }
+            .posts-page-card-title {
+              color: #000;
+            }
+            .posts-page-card-description {
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    @include ProductsServiceResponsive768px();
+  }
+  
+  @media screen and (max-width: 480px) {
+    @include ProductsServiceResponsive480px();
+  }
+}
+/// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE/// LIGHT MODE
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  @include ProductsServiceResponsive768px();
+}
+
+@media screen and (max-width: 480px) {
+  @include ProductsServiceResponsive480px();
+}

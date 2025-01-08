@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+// 
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    // this hides scrollbar arrows
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #616161;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #848484; 
+} 
+  ::-webkit-scrollbar-track {
+    background-color: #383838;  
+  }
+  
+.nav-bar{
+    z-index: 9999;
+   position: fixed;
+   top: 0px;
+background-color:  #181818;
+}
+
+[data-theme="light"] {
+ 
+  .nav-bar {
+      background-color: #fff;    
+     
+  }
+
+}

@@ -1,0 +1,626 @@
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+@mixin ProductsPagesResponsive480px{
+  .body{
+    height: 2000px;
+    // overflow: visible;
+    .home-test-mode-container {
+      width: 440px;
+      margin-top: 80px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .posts-page-title-side {
+      width: 300px;
+      margin-left: 140px;
+      .posts-page-title {
+        font-size: 20px;
+        width: 200px;
+      }
+      .posts-page-blue-line {
+        width: 100px;
+        margin-left: 50px;
+      }
+    }
+    .general-education-container {
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 440px;
+      height: 1300px;
+      /// 
+      .general-education-container-title-side {
+        height: 100px;
+        display: flex;
+        width: 440px; 
+        justify-content: flex-start; 
+        align-items: center;
+        gap: 20px;
+        overflow-x: auto; 
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding-left: 10px; 
+        &::-webkit-scrollbar {
+          display: none; 
+        }
+      
+        .general-education-link {
+          text-decoration: none;
+          .general-education-title-side-card, 
+          .general-education-title-side-card-main {
+            width: 180px;
+            height: 50px;
+            .general-education-container-title {
+              font-size: 14px;
+            }
+          }
+        }
+      }  
+      .generals-container-body-side {
+        margin-top: 30px;
+        height: 1400px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .generals-card {
+          width: 440px;
+          height: 100%;
+          .generals-card-text {
+            width: 400px;
+            left: 40px;
+          }
+          .generals-card-bottom-side {
+            position: absolute;
+            top: 640px;
+            left: 320px;        
+            width: 150px;
+          }
+          .generals-card-bottom-side01 {
+            position: absolute;
+            top: 640px;
+            left: 320px;        
+            width: 150px;
+          }
+          .generals-card-text-01 {
+            left: 40px;
+            width: 400px;
+          }
+        }
+        .generals-body-side-container {
+          height: 100%;
+          width: 440px;
+          .generals-second-card {
+            height: 50%;
+            width: 100%;
+            .generals-second-card-text {
+              left: 40px;
+            }
+            .generals-second-card-bottom-side {
+              top: 1020px;
+              left: 290px;
+            }
+            .generals-second-third-bottom-side {
+              top: 1360px;
+              left: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+@mixin ProductsPagesResponsive768px{
+  .body{
+    height: auto;
+    padding-bottom: 150px;
+      .home-test-mode-container {
+        width: 720px;
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+      } 
+      .posts-page-title-side {
+        height: 100%;
+        width: 200px;
+        margin-left: 340px;
+        height: 100px;
+        text-align: center;
+        .posts-page-title {
+          font-size: 20px;
+          width: 100px;
+        }
+        .posts-page-blue-line {
+          width: 100px;
+          height: 5px;
+          margin-left: 1px;
+        }
+      }
+    .general-education-container {
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 720px;
+      height: auto;
+      .general-education-container-title-side {
+        height: 100px;
+        display: flex;
+        width: 720px; 
+        justify-content: flex-start; 
+        align-items: center;
+        gap: 20px;
+        overflow-x: auto; 
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding-left: 10px; 
+        &::-webkit-scrollbar {
+          display: none; 
+        }
+        .general-education-link {
+          text-decoration: none;
+          .general-education-title-side-card, 
+          .general-education-title-side-card-main {
+            width: 180px;
+            height: 50px;
+            .general-education-container-title {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .generals-container-body-side {
+        margin-top: 30px;
+        height: 1400px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .generals-card {
+          width: 480px;
+          height: 100%;
+          .generals-card-text {
+            width: 400px;
+            left: 40px;
+          }
+          .generals-card-bottom-side {
+            position: absolute;
+            top: 640px;
+            left: 320px;        
+            width: 150px;
+          }
+          .generals-card-text-01 {
+            left: 40px;
+            width: 400px;
+          }
+          #general{
+            left: 350px;
+            top: 1800px;
+          }
+        }
+        .generals-body-side-container {
+          height: 100%;
+          width: 440px;
+          .generals-second-card {
+            height: 50%;
+            width: 100%;
+            .generals-second-card-text {
+              left: 40px;
+            }
+            .generals-second-card-bottom-side {
+              top: 1020px;
+              left: 290px;
+            }
+            .generals-second-third-bottom-side {
+              top: 1360px;
+              left: 300px;
+            }
+          }
+        }
+      }
+    }
+   }
+}
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+.body {
+  background-color: #181818;
+  height: 900px;
+  ///  COPYING STYLES  ///
+  /// NAV-BAR kind of part ///
+  .home-test-mode-container {
+    border: solid 2px #313131;
+    height: 50px;
+    width: 1340px;
+    border-top: solid 1px #31313100;
+    z-index: 700;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    .home-test-mode-container-text {
+      color: #d4d4d4;
+      text-align: center;
+      font-size: 14px;
+    }
+  } /// NAV-BAR kind of part ///
+  .posts-page-title-side {
+    height: 100%;
+    width: 800px;
+    margin-left: 500px;
+    height: 100px;
+    text-align: center;
+    .posts-page-title {
+      color: #fff;
+      font-size: 25px;
+      width: 730px;
+    }
+    .posts-page-blue-line {
+      background-color: rgb(0, 98, 255);
+      width: 100px;
+      height: 5px;
+      margin-left: 320px;
+    }
+  }
+  ///  COPYING STYLES  ///
+  .general-education-container {
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 1340px;
+    height: 600px;
+    .general-education-container-title-side {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .general-education-link {
+        text-decoration: none;
+        .general-education-title-side-card {
+          border-radius: 5px;
+          background-color: #272335;
+          width: 230px;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 500ms;
+          .general-education-container-title {
+            color: #c1c1c1;
+            opacity: 0.6;
+            font-weight: 900;
+            margin-bottom: 20px;
+          }
+          &:hover {
+            box-shadow: 0px 5px 6px rgba(0, 92, 232, 0.75);
+            -webkit-box-shadow: 0px 5px 6px rgba(0, 92, 232, 0.75);
+            -moz-box-shadow: -0px 5px 6px rgba(0, 92, 232, 0.75);
+          }
+        }
+        .general-education-title-side-card-main {
+          border-radius: 5px;
+          background-color: #272335;
+          width: 230px;
+          height: 60px;
+          display: flex;
+          color: #fff;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0px 5px 6px rgba(0, 92, 232, 0.75);
+          -webkit-box-shadow: 0px 5px 6px rgba(0, 92, 232, 0.75);
+          -moz-box-shadow: -0px 5px 6px rgba(0, 92, 232, 0.75);
+          .general-education-container-title {
+            color: #c1c1c1;
+            font-weight: 900;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .generals-container-body-side {
+      margin-top: 30px;
+      height: 420px;
+      display: flex;
+      gap: 20px;
+      .generals-card {
+        width: 420px;
+        height: 100%;
+
+        .general-education-card-image {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          opacity: 0.5;
+          z-index: 5;
+          transition: 500ms;
+          object-fit: cover;
+        }
+        .generals-card-text {
+          position: absolute;
+          color: #fff;
+          font-weight: 600;
+          z-index: 6;
+          width: 400px;
+          left: 220px;
+        }
+        .generals-card-text-01 {
+          position: absolute;
+          color: #fff;
+          font-weight: 600;
+          z-index: 6;
+          width: 400px;
+          left: 1080px;
+        }
+        .generals-card-bottom-side {
+          position: absolute;
+          top: 765px;
+          left: 480px;
+          z-index: 6;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          gap: 10px;
+          opacity: 0;
+          transition: opacity 500ms, bottom 500ms;
+          .generals-card-bottom-side-text {
+            color: #fff;
+            font-weight: 900;
+          }
+          .generals-card-icon {
+            color: #fff;
+          }
+       
+        }
+        .generals-card-bottom-side01 {
+          position: absolute;
+          top: 760px;
+          left: 1300px;
+          z-index: 6;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          gap: 10px;
+          opacity: 0;
+          transition: opacity 500ms, bottom 500ms;
+          .generals-card-bottom-side-text {
+            color: #fff;
+            font-weight: 900;
+          }
+          .generals-card-icon {
+            color: #fff;
+          }
+       
+        }
+        &:hover {
+          .generals-card-bottom-side {
+            opacity: 1;
+          }
+          .generals-card-bottom-side01 {
+            opacity: 1;
+          }
+          .general-education-card-image {
+            opacity: 1;
+            transition: opacity 500ms;
+          }
+        }
+      }
+      .generals-body-side-container {
+        height: 100%;
+        width: 400px;
+        .generals-second-card {
+          height: 48%;
+          width: 400px;
+          .generals-second-card-text {
+            position: absolute;
+            color: #fff;
+            font-weight: 600;
+            z-index: 6;
+            width: 400px;
+            left: 660px;
+          }
+          .generals-education-second-card-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            opacity: 0.5;
+            z-index: 5;
+            transition: 500ms;
+            object-fit: cover;
+          }
+          .generals-second-card-bottom-side {
+            position: absolute;
+            top: 545px;
+            left: 900px;
+            z-index: 6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            gap: 10px;
+            opacity: 0;
+            transition: opacity 500ms, bottom 500ms;
+            .generals-second-card-bottom-side-text {
+              color: #fff;
+              font-weight: 900;
+            }
+            .generals-second-card-icon {
+              color: #fff;
+            }
+          }
+          .generals-second-third-bottom-side {
+            position: absolute;
+            top: 760px;
+            left: 900px;
+            z-index: 6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            gap: 10px;
+            opacity: 0;
+            transition: opacity 500ms, bottom 500ms;
+            .generals-second-card-bottom-side-text {
+              color: #fff;
+              font-weight: 900;
+            }
+            .generals-second-card-icon {
+              color: #fff;
+            }
+          }
+          &:hover {
+            .generals-second-third-bottom-side {
+              opacity: 1;
+            }
+            .generals-second-card-bottom-side {
+              opacity: 1;
+            }
+            .generals-education-second-card-image {
+              opacity: 1;
+              transition: opacity 500ms;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE/// LIGHT MODE
+:host-context([data-theme="light"]) {
+  .body {
+    background-color: #fff;
+  }
+  /// TEST MODE CONTAINER LIGHT MODE STYLES ///
+
+  .home-test-mode-container {
+    border: solid 2px transparent;
+
+    background-color: rgb(222, 232, 255);
+
+    .home-test-mode-container-text {
+      color: #6460d8;
+    }
+  }
+  /// TEST MODE CONTAINER LIGHT MODE STYLES ///
+  .posts-page-title-side {
+    .posts-page-title {
+      color: #000;
+    }
+  }
+  .general-education-container {
+    .general-education-container-title-side {
+      .general-education-link {
+        .general-education-title-side-card {
+          background-color: #fff;
+
+          .general-education-container-title {
+            color: #000;
+          }
+
+          box-shadow: 0px 2px 2px 2px rgba(104, 104, 104, 0.75);
+          -webkit-box-shadow: 0px 2px 2px 2px rgba(97, 97, 97, 0.75);
+          -moz-box-shadow: -0px 2px 2px 2px rgba(92, 92, 92, 0.75);
+          &:hover {
+            color: rgb(0, 98, 255); ///
+            box-shadow: 0px 4px 4px 4px rgba(104, 104, 104, 0.75);
+            -webkit-box-shadow: 0px 4px 4px 4px rgba(97, 97, 97, 0.75);
+            -moz-box-shadow: -0px 4px 4px 4px rgba(92, 92, 92, 0.75);
+          }
+        }
+        .general-education-title-side-card-main {
+          background-color: #fff;
+
+          .general-education-container-title {
+            color: rgb(0, 98, 255);
+          }
+
+          box-shadow: 0px 2px 2px 2px rgba(104, 104, 104, 0.75);
+          -webkit-box-shadow: 0px 2px 2px 2px rgba(97, 97, 97, 0.75);
+          -moz-box-shadow: -0px 2px 2px 2px rgba(92, 92, 92, 0.75);
+        }
+      }
+    }
+    .generals-container-body-side {
+      .generals-card {
+        .general-education-card-image {
+          opacity: 1;
+        }
+        .generals-card-text {
+          color: #fff;
+        }
+        .generals-card-bottom-side {
+          opacity: 0;
+          .generals-card-bottom-side-text {
+            color: #fff;
+          }
+          .generals-card-icon {
+            color: #fff;
+          }
+        }
+        &:hover {
+          .generals-card-bottom-side {
+            opacity: 1;
+          }
+          .general-education-card-image {
+            opacity: 0.9;
+          }
+        }
+      }
+      .generals-body-side-container {
+        .generals-second-card {
+          .generals-second-card-text {
+            color: #fff;
+          }
+          .generals-education-second-card-image {
+            opacity: 1;
+          }
+          .generals-second-card-bottom-side {
+            .generals-second-card-bottom-side-text {
+              color: #fff;
+            }
+            .generals-second-card-icon {
+              color: #fff;
+            }
+          }
+          .generals-second-third-bottom-side {
+            opacity: 0;
+            .generals-second-card-bottom-side-text {
+              color: #fff;
+            }
+            .generals-second-card-icon {
+              color: #fff;
+            }
+          }
+          &:hover {
+            .generals-second-third-bottom-side {
+              opacity: 1;
+            }
+            .generals-second-card-bottom-side {
+              opacity: 0.9;
+            }
+            .generals-education-second-card-image {
+              opacity: 0.9;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    @include ProductsPagesResponsive768px();
+  }
+  
+  @media screen and (max-width: 480px) {
+    @include ProductsPagesResponsive480px();
+  }
+}
+/// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE/// LIGHT MODE
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  @include ProductsPagesResponsive768px();
+}
+
+@media screen and (max-width: 480px) {
+  @include ProductsPagesResponsive480px();
+}

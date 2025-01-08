@@ -1,0 +1,321 @@
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+@mixin footerResponsive480px {
+  .footer {
+    width: 100%;
+    height: 800px;
+    .footer-left-and-right-side-container {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      height: 580px;
+      gap: 40px;
+      .footer-left-side {
+        width: 480px;
+        .footer-map {
+          width: 450px;
+          margin-left: 1px;
+        }
+      }
+      .footer-right-side {
+        flex-direction: column;
+        width: 100px;
+
+        .footer-title {
+          width: 200px;
+        }
+        .footer-address-data-container {
+          width: 320px;
+        }
+        .footer-open-time-data-container {
+          width: 180px;
+        }
+        .footer-number-data-container {
+          // this is for A tag
+          .footer-phone-link {
+            width: 180px;
+          }
+        }
+        .footer-email-data-container {
+          .footer-mail-link {
+            width: 180px;
+          }
+        }
+        .footer-links-container {
+          width: 180px;
+        }
+      }
+    }
+
+    .footer-bottom-side {
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      width: 480px;
+      margin-top: 20px;
+    }
+  }
+}
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+@mixin footerResponsive768px{
+  .footer {
+    width: 100%;
+      height: 480px;
+    .footer-left-and-right-side-container {
+      flex-direction: row;
+      width: 100%;
+      height: 350px;
+      gap: 1px;
+      .footer-left-side {
+        width: 480px;
+        .footer-map {
+          width: 450px;
+          margin-left: 1px;
+        }
+      }
+      .footer-right-side {
+        flex-direction: column;
+        width: 100px;
+
+        .footer-title {
+      width: 200px;
+      margin-top: 30px;
+        }
+        .footer-address-data-container {
+      width: 220px;
+      height: 50px;
+        }
+        .footer-open-time-data-container {
+      width: 180px;
+        }
+        .footer-number-data-container {
+          .footer-phone-link {
+      width: 180px;
+          }
+        }
+        .footer-email-data-container {
+          .footer-mail-link {
+      width: 180px;
+          }
+        }
+        .footer-links-container {
+      width: 180px;
+        }
+      }
+    }
+    .footer-bottom-side {
+      height: 90px;
+      flex-direction: row;
+      gap: 100px;
+      margin-top: 30px;
+    }
+  }
+}
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+@mixin data-styles {
+  display: flex;
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.7;
+  align-items: center;
+  width: 380px;
+  color: #fff;
+  gap: 20px;
+  height: 35px;
+}
+.footer {
+  background-color: rgb(11, 11, 11);
+  width: 100%;
+  height: 410px;
+  opacity: 0.9;
+  .footer-left-and-right-side-container {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    .footer-left-side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .footer-map {
+        width: 890px;
+        height: 230px;
+        border-radius: 20px;
+        margin-left: 150px;
+      }
+      width: 1080px;
+    }
+    .footer-right-side {
+      display: flex;
+      flex-direction: column;
+      width: 560px;
+      gap: 10px;
+      margin-left: 40px;
+      .footer-title {
+        color: #fff;
+        font-size: 22px;
+      }
+      .footer-address-data-container {
+        @include data-styles();
+      }
+      .footer-open-time-data-container {
+        @include data-styles();
+      }
+      .footer-number-data-container {
+        // this is for A tag
+        .footer-phone-link {
+          text-decoration: none;
+          @include data-styles();
+          transition: 500ms;
+          &:hover {
+            color: rgb(58, 117, 255);
+          }
+        }
+      }
+      .footer-email-data-container {
+        // this is for A tag
+        .footer-mail-link {
+          @include data-styles();
+          transition: 500ms;
+          &:hover {
+            color: rgb(63, 121, 255);
+          }
+          text-decoration: none;
+        }
+      }
+      .footer-links-container {
+        @include data-styles();
+
+        .footer-link-facebook {
+          background-color: rgb(59, 59, 74);
+          font-size: 14px;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+          color: blue;
+        }
+        .footer-link-youtube {
+          background-color: rgb(59, 59, 74);
+          font-size: 14px;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+          color: red;
+        }
+      }
+    }
+  }
+
+  .footer-bottom-side {
+    border-top: solid 1px #3d3d3d;
+    height: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 200px;
+    .footer-bottom-side-title {
+      color: #fff;
+    }
+    .footer-bottom-side-container {
+      display: flex;
+      gap: 10px;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+ 
+}
+/// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE/// LIGHT MODE
+:host-context([data-theme="light"]) {
+  .footer {
+    border-top: solid 1px #53535348;
+    background-color: #fff;
+    .footer-left-and-right-side-container {
+      display: flex;
+      width: 100%;
+      height: 300px;
+      .footer-left-side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .footer-map {
+          width: 890px;
+          height: 230px;
+          border-radius: 20px;
+          margin-left: 150px;
+        }
+      }
+      .footer-right-side {
+        .footer-title {
+          color: #000;
+        }
+        .footer-address-data-container {
+          color: #000;
+        }
+        .footer-open-time-data-container {
+          color: #000;
+        }
+        .footer-phone-link {
+          color: #000;
+        }
+        .footer-mail-link {
+          color: #000;
+        }
+        .footer-links-container {
+          @include data-styles();
+
+          .footer-link-facebook {
+            background-color: rgb(150, 150, 150);
+
+            color: blue;
+          }
+          .footer-link-youtube {
+            background-color: rgb(150, 150, 150);
+
+            color: red;
+          }
+        }
+      }
+    }
+
+    .footer-bottom-side {
+      border-top: solid 1px #3d3d3d3f;
+
+      .footer-bottom-side-title {
+        color: #000;
+      }
+      .footer-bottom-side-container {
+        color: #000;
+      }
+    }
+  }
+   
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    @include footerResponsive768px();
+  }
+  
+  @media screen and (max-width: 480px) {
+    @include footerResponsive480px();
+  }
+}
+/// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE/// LIGHT MODE
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  @include footerResponsive768px();
+}
+
+@media screen and (max-width: 480px) {
+  @include footerResponsive480px();
+}
+

@@ -1,0 +1,49 @@
+<app-nav-bar></app-nav-bar>
+<div class="body">
+
+
+    <div class="home-test-mode-container">
+        <p class="home-test-mode-container-text">საიტი მუშაობს სატესტო რეჟიმში</p>
+    </div>
+    <div class="posts-page-title-section">
+      <button class="posts-page-back-button" (click)="goBack()">
+        <i class="bi bi-arrow-left-short"></i>
+      </button>
+      
+        <div class="posts-page-title-side">
+            <h1 class="posts-page-title">სიახლეები</h1>
+            <div class="posts-page-blue-line"></div>
+        </div>
+       
+    </div>
+
+
+    <div class="posts-page-products-container" [ngStyle]="{'height.px': containerHeight}">
+      <a *ngFor="let post of filteredPosts" class="posts-page-products-card-link" [routerLink]="['/post-details', post.id]">
+        <div class="posts-page-products-card">
+          <div class="posts-page-card-left-side">
+            <img class="posts-page-card-image" [src]="post.image" alt="Image">
+          </div>
+          <div class="posts-page-card-right-side">
+            <p class="posts-page-card-date">{{ post.published_at }}</p>
+            <h1 class="posts-page-card-title">{{ post.title }}</h1>
+            <p class="posts-page-card-description">{{ post.summary }}</p>
+            <div class="posts-page-card-link-container">
+              <p class="posts-page-card-link">სრულიად წაკითხვა</p>
+              <i style="margin-top: 7px;" class="bi bi-chevron-right"></i>
+            </div>
+           
+          </div>
+        </div>
+      </a>
+     
+    </div>
+      <button class="posts-page-more-button" (click)="showMorePosts()">
+        მეტის ნახვა
+        <div class="posts-page-more-button-icon"><i class="bi bi-arrow-down-short"></i></div>
+      </button>
+
+    </div>
+  
+    <app-footer></app-footer>
+

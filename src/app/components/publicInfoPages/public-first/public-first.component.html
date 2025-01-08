@@ -1,0 +1,87 @@
+<app-nav-bar></app-nav-bar>
+<body>
+    <div class="home-test-mode-container">
+        <p class="home-test-mode-container-text">საიტი მუშაობს სატესტო რეჟიმში</p>
+    </div>
+        <!-- MAIN -->
+    <div class="public-info-page-nav-bar">
+      
+         <!-- 2023 -->
+        <a class="public-info-nav-bar-link" href="public-info">
+            <div class="public-info-nav-bar-cube-text-container">
+                <div class="public-info-nav-bar-cube">
+               
+                </div>
+                <p class="public-info-nav-bar-text">2024</p>
+            </div>         
+        </a>
+         <!-- 2023 -->
+         <a class="public-info-nav-bar-link-main" href="public-info/year-2023">
+            <div class="public-info-nav-bar-cube-main">
+                2023
+            </div>
+        </a>
+         <!-- 2022 -->
+         <a class="public-info-nav-bar-link" href="public-info/year-2022">
+            <div class="public-info-nav-bar-cube-text-container">
+                <div class="public-info-nav-bar-cube">
+               
+                </div>
+                <p class="public-info-nav-bar-text">2022</p>
+            </div>         
+        </a>
+         <!-- 2022 -->
+         <!-- 2021 -->
+         <a class="public-info-nav-bar-link" href="public-info/year-2021">
+            <div class="public-info-nav-bar-cube-text-container">
+                <div class="public-info-nav-bar-cube">
+               
+                </div>
+                <p class="public-info-nav-bar-text">2021</p>
+            </div>         
+        </a>
+         <!-- 2021 -->
+         <!-- 2020 -->
+         <a class="public-info-nav-bar-link" href="public-info/year-2020">
+            <div class="public-info-nav-bar-cube-text-container">
+                <div class="public-info-nav-bar-cube">
+               
+                </div>
+                <p class="public-info-nav-bar-text">2020</p>
+            </div>         
+        </a>
+         <!-- 2020 -->
+ <hr class="public-info-nav-bar-line">
+ <!-- MAIN -->
+    </div>
+
+    <main class="public-info-main-side">
+        <div class="public-info-left-side">
+          <div *ngFor="let dropdown of dropdowns; let i = index" 
+               class="dropdown-container" 
+               [class.active]="i === activeDropdown" 
+               (click)="toggleDropdown(i)">
+            <div class="dropdown-header">
+                <p class="dropdown-header-title">{{ dropdown.title }}</p>
+                <div class="dropdown-header-icon">
+                    <i *ngIf="i !== activeDropdown" class="bi bi-chevron-down"></i>
+                    <i *ngIf="i === activeDropdown" class="bi bi-chevron-up"></i>
+                </div>
+            </div>
+            <div class="dropdown-content" *ngIf="i === activeDropdown">
+              <p class="dropdown-content-text" *ngFor="let item of dropdown.items; let j = index" 
+                 (click)="selectItem(i, j, $event)">{{ item }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="public-info-right-side">
+          <div *ngIf="selectedDropdownIndex !== null && selectedItemIndex !== null">
+            <div class="description-cube">
+              <p>{{ dropdowns[selectedDropdownIndex].description }}</p>
+            </div>
+          </div>
+        </div>
+    </main>
+</body>
+<app-footer></app-footer>
+

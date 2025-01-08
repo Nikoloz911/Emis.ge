@@ -1,0 +1,341 @@
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+@mixin ServiceInsideResponsive480px{
+  .body{
+    height: auto;
+     /// NAV-BAR kind of part ///
+     .home-test-mode-container {
+      height: 50px;
+      width: 440px;
+      margin-top: 80px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    /// NAV-BAR kind of part ///
+    .posts-page-title-section {
+      height: 100px;
+      width: 100%;
+      display: flex;
+      margin-top: 40px;
+      .postsDetails-page-back-button {
+        margin-left: 30px;
+      }
+      .posts-page-title-side {
+        height: 100%;
+        width: 140px;
+        margin-left: 120px;
+      }
+    }
+    .posts-inside-page-container {
+      width: 400px;
+      margin-left: 20px;
+      margin-right: 20px;
+      .posts-inside-page-image {
+        width: 400px;
+      }
+      .posts-inside-page-title {
+        font-size: 20px;
+      }
+      .posts-inside-page-line {
+        display: none;
+      }
+      .posts-inside-page-links-container {
+        width: 180px;
+      }
+    }
+  }
+}
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+@mixin ServiceInsideResponsive768px{
+  .body{
+    height: auto;
+     /// NAV-BAR kind of part ///
+     .home-test-mode-container {
+      height: 50px;
+      width: 720px;
+      margin-top: 80px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    /// NAV-BAR kind of part ///
+    .posts-page-title-section {
+      height: 100px;
+      width: 100%;
+      display: flex;
+      margin-top: 40px;
+      .postsDetails-page-back-button {
+        margin-left: 30px;
+      }
+      .posts-page-title-side {
+        height: 100%;
+        width: 140px;
+        margin-left: 260px;
+      }
+    }
+    .posts-inside-page-container {
+      width: 690px;
+      margin-left: 20px;
+      margin-right: 20px;
+      .posts-inside-page-image {
+        width: 690px;
+      }
+      .posts-inside-page-title {
+        font-size: 20px;
+      }
+      .posts-inside-page-line {
+        display: block;
+        width: 725px;
+      }
+      .posts-inside-page-links-container {
+        width: 180px;
+      }
+    }
+  }
+}
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+///  COPYING ALL STYLES FROM POSTS INSIDE PAGE  ///
+.body {
+  margin: 0;
+  background-color: #181818;
+  height: auto;
+  padding-bottom: 100px;
+  /// NAV-BAR kind of part ///
+  .home-test-mode-container {
+    border: solid 2px #313131;
+    height: 50px;
+    width: 1340px;
+    border-top: solid 1px #31313100;
+    z-index: 700;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    .home-test-mode-container-text {
+      color: #d4d4d4;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+
+  /// NAV-BAR kind of part ///
+
+  .posts-page-title-section {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    .postsDetails-page-back-button {
+      font-size: 35px;
+      margin-left: 200px;
+      width: 30px;
+      height: 30px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background-color: transparent;
+      color: #fff;
+      border: none;
+    }
+    .posts-page-title-side {
+      height: 100%;
+      width: 140px;
+      margin-left: 560px;
+      .posts-page-title {
+        color: #fff;
+        font-size: 25px;
+        margin-left: 20px; /// THIS IS ADDED
+      }
+      .posts-page-blue-line {
+        background-color: rgb(0, 98, 255);
+        width: 100px;
+        height: 5px;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .posts-inside-page-container {
+    height: auto;
+    width: 1300px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 20px;
+    .posts-inside-page-image {
+      width: 1300px;
+      height: 380px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+    .posts-inside-page-date {
+      color: #777a8d;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+    .posts-inside-page-title {
+      color: #c5c5c5;
+      font-size: 25px;
+      transition: 500ms;
+      height: 40px;
+      overflow: hidden;
+      margin-left: 20px;
+    }
+    .posts-inside-page-line {
+      background-color: grey;
+      width: 1340px;
+      border: solid 1px rgb(57, 57, 57);
+      transform: translateX(-20px);
+    }
+    .posts-inside-page-sizeing-container {
+      display: flex;
+
+      margin-top: 20px;
+      height: auto;
+      gap: 15px;
+      align-items: center;
+      .posts-inside-page-button {
+        background-color: transparent;
+        border: solid 1px rgb(69, 69, 69);
+        border-radius: 50px;
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .posts-inside-page-icon {
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+      }
+    }
+    // .posts-inside-page-summary{
+
+    // }
+    $default-font-size: 13px;
+
+    .posts-inside-page-description {
+      color: #b0b0b0;
+      font-size: 12px;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .posts-inside-page-links-container {
+      display: flex;
+      margin-top: 20px;
+      gap: 10px;
+      color: #a7a7a7;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+      font-size: 18px;
+      font-weight: 600;
+      .posts-page-icons {
+        font-size: 30px;
+        display: flex;
+        gap: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/// COPYING ALL STYLES FROM POSTS INSIDE PAGE ///
+
+/// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE/// LIGHT MODE
+:host-context([data-theme="light"]) {
+  .body {
+    background-color: #fff;
+    height: auto;
+    padding-bottom: 100px;
+    /// TEST MODE CONTAINER LIGHT MODE STYLES ///
+
+    .home-test-mode-container {
+      border: solid 2px transparent;
+
+      background-color: rgb(222, 232, 255);
+
+      .home-test-mode-container-text {
+        color: #6460d8;
+      }
+    }
+    /// TEST MODE CONTAINER LIGHT MODE STYLES ///
+    .posts-page-title-section {
+      .postsDetails-page-back-button {
+        color: #000;
+      }
+      .posts-page-title-side {
+        .posts-page-title {
+          color: #000;
+        }
+      }
+    }
+
+    .posts-inside-page-container {
+      border: solid 1px #c9c9c9;
+      background-color: #fff;
+
+      .posts-inside-page-date {
+        color: #777a8d;
+      }
+      .posts-inside-page-title {
+        color: #000;
+      }
+      .posts-inside-page-line {
+        background-color: rgb(212, 212, 212);
+
+        border: solid 1px rgb(205, 205, 205);
+      }
+      .posts-inside-page-sizeing-container {
+        .posts-inside-page-button {
+          border: solid 1px rgb(204, 204, 204);
+
+          color: #000;
+        }
+        .posts-inside-page-icon {
+          color: #000;
+        }
+      }
+      // .posts-inside-page-summary{
+
+      // }
+      $default-font-size: 13px;
+
+      .posts-inside-page-description {
+        color: #000;
+
+        height: auto;
+      }
+
+      .posts-inside-page-links-container {
+        color: #000;
+      }
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    @include ServiceInsideResponsive768px();
+  }
+  
+  @media screen and (max-width: 480px) {
+    @include ServiceInsideResponsive480px();
+  }
+}
+/// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE/// LIGHT MODE
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  @include ServiceInsideResponsive768px();
+}
+
+@media screen and (max-width: 480px) {
+  @include ServiceInsideResponsive480px();
+}

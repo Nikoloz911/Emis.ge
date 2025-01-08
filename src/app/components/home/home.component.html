@@ -1,0 +1,159 @@
+
+<app-nav-bar></app-nav-bar>
+<body>
+  <main class="home-container">
+    <div class="home-test-mode-container">
+        <p class="home-test-mode-container-text">საიტი მუშაობს სატესტო რეჟიმში</p>
+    </div>
+   <!-- Carousel -->
+    <!--------  API !!!  -------->
+<div class="carousel-container">
+  <div class="carousel-inner" [ngStyle]="{ 'transform': 'translateX(-' + (currentIndex * 100) + '%)' }">
+    <div class="carousel-item" *ngFor="let item of items"  (mouseenter)="onMouseEnter($event)" (mouseleave)="onMouseLeave($event)">
+      <a [routerLink]="['/post-details', item.id]">
+        <img [src]="item.image" alt="Image">
+        <div class="carousel-text-and-text-container">
+          <div class="carousel-text">{{ item.text }}</div>
+          <div class="carousel-text-container">
+            <p class="carousel-more-text">სრულად წაკითხვა</p>
+            <div class="carousel-icon"><i class="bi bi-chevron-right"></i></div>
+          </div> 
+        </div>      
+        <div class="tooltip">{{ item.text }}</div>
+      </a>
+    </div>
+  </div>
+  <button class="carousel-button prev" (click)="prev()">&#10094;</button>
+  <button class="carousel-button next" (click)="next()">&#10095;</button>
+</div>
+    <!--------  API !!!  -------->
+<!-- Carousel -->
+
+<!----------------------------------  PRODUCTS  ------------------------------------>
+ <div class="products-container">
+    <div class="products-container-title-section">
+        <h1 class="products-container-title">პროდუქტები</h1>
+        <a class="general-education-link" href="/projects/9">
+            <p>არქივი</p>
+        </a>   
+    </div>
+    <div class="products-section"
+    (mousedown)="onMouseDownScroll($event)"
+    (mousemove)="onMouseMoveScroll($event)"
+    (mouseup)="onMouseUpScroll($event)"
+    (mouseleave)="onMouseLeaveScroll($event)">
+  <a class="products-card-link" *ngFor="let product of products" [routerLink]="['/product-details', product.id]" (click)="onClickCard($event)">
+    <div class="products-card" (mouseenter)="onMouseEnter($event)">
+      <img class="product-image" [src]="product.image" alt="{{ product.title }}">
+      <h1 class="product-title">{{ product.title }}</h1>
+      <p class="product-description">{{product.summary}}</p>
+      <div class="tooltip">სრულად წაკითხვა</div>
+    </div>
+  </a>
+</div> 
+ </div>
+<!----------------------------------  PRODUCTS  ------------------------------------>
+<!----------------------------------  Popular Links  ------------------------------------>
+<div class="popular-links-container">
+  <div class="popular-links-title-section">
+    <h1 class="popular-links-title">პოპულარული ბმულები</h1>
+    <button class="popular-links-left-button" (click)="scrollLeftProducts()" id="scrollLeftLink">&#10094;</button>
+    <button class="popular-links-right-button" (click)="scrollRightProducts()" id="scrollRightLink">&#10095;</button>
+  </div>
+  <div id="products-section" class="products-section"
+    (mousedown)="onMouseDownScroll($event)"
+    (mousemove)="onMouseMoveScroll($event)"
+    (mouseup)="onMouseUpScroll($event)"
+    (mouseleave)="onMouseLeaveScroll($event)">
+    <a class="products-card-link" *ngFor="let link of popularLinks" [href]="link.url" (click)="onClickCard($event)">
+      <div id="products-card" class="products-card" (mouseenter)="onMouseEnter($event)">
+        <img class="product-image" [src]="link.image" alt="{{ link.title }}">
+        <h1 class="product-title">{{ link.title }}</h1>
+        <p class="product-description">{{ link.summary }}</p>
+      </div>
+    </a>    
+  </div>
+</div>
+<!----------------------------------  Popular Links  ------------------------------------>
+<!----------------------------------  PARTNERS  ------------------------------------>
+<div class="partners-container">
+  <div class="partners-title-section">
+    <h1 class="partners-container-title">პარტნიორები</h1>
+    <button class="partners-left-button" (click)="scrollLeftPartners()">&#10094;</button>
+<button class="partners-right-button" (click)="scrollRightPartners()">&#10095;</button>
+  </div>
+  <div class="partners-products-container" 
+       (mousedown)="onMouseDownScroll($event)" 
+       (mousemove)="onMouseMoveScroll($event)" 
+       (mouseup)="onMouseUpScroll($event)" 
+       (mouseleave)="onMouseLeaveScroll($event)">
+    <a class="partners-card-link" href="{{partner.url}}" *ngFor="let partner of partners" (click)="onClickCard($event)">
+      <div class="partners-card">
+        <img class="partners-card-image" [src]="partner.image" alt="">
+        <p class="partners-card-title">{{partner.title}}</p>
+      </div>
+    </a>
+  </div>
+</div>
+<!----------------------------------  PARTNERS  ------------------------------------>
+<!----------------------------------  STATISTIC  ------------------------------------>
+<h1 class="statistic-section-title">სტატისტიკა</h1>
+<div class="statistic-section"> 
+  <div class="statistic-section-left-side">
+        <h3 class="statistic-section-left-side-title">საჯარო სკოლების ინტერნეტიზაცია</h3>      
+       <div id="image"></div>    <!----------------------- IMAGE SRC IN SCSS ---------------------------->
+        <div class="statistic-section-left-side-data">
+          <div class="left-side-data">
+            <div class="pink-cube"></div>
+            <p class="left-side-data-title">ოპტიკურ ბოჭკოვანი კავშირი</p>
+            <p class="left-side-data-cable">{{stats.cable}}</p>
+          </div>
+
+          <div class="left-side-data">
+            <div class="red-cube"></div>
+            <p class="left-side-data-title">რადიო</p>
+            <p class="left-side-data-radio">{{stats.radio}}</p>
+          </div>
+
+          <div class="left-side-data-border-bottom">  <!--change class name for no border bottom-->
+            <div class="blue-cube"></div>
+            <p class="left-side-data-title">ცენტრალიზირებული WI-FI</p>
+            <p class="left-side-data-wifi">{{stats.wifi}}</p>
+          </div>
+        </div>
+  </div>
+  <div class="statistic-section-right-side">
+    <h1 class="statistic-section-right-side-title">საგანმანათლებლო დაწესებულებები</h1>
+    <div class="statistic-section-right-side-data-container">
+      <div class="statistic-section-right-side-data">
+        <p class="statistic-section-right-side-data-title">წინასასკოლო განათლება</p>
+        <div class="statistic-section-data-number-cube">
+          <p class="statistic-section-data-number">{{institutionData['preschool']}}</p>
+        </div>     
+      </div>
+      <div class="statistic-section-right-side-data">
+        <p class="statistic-section-right-side-data-title">უმაღლესი განათლება</p>
+        <div class="statistic-section-data-number-cube">
+        <p class="statistic-section-data-number">{{institutionData['high_education']}}</p> 
+        </div>
+      </div>
+      <div class="statistic-section-right-side-data">
+        <p class="statistic-section-right-side-data-title">ზოგადი განათლება</p>
+        <div class="statistic-section-data-number-cube">
+        <p class="statistic-section-data-number">{{institutionData['general_education']}}</p> 
+        </div>
+      </div>
+      <div class="statistic-section-right-side-data">
+        <p class="statistic-section-right-side-data-title">პროფესიული სკოლები</p>
+        <div class="statistic-section-data-number-cube">
+        <p class="statistic-section-data-number">{{institutionData['professional_schools']}}</p> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!----------------------------------  STATISTIC  ------------------------------------>
+  </main>  
+</body>
+<app-footer></app-footer>
+

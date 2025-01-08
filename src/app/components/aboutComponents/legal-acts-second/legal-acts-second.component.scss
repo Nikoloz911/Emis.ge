@@ -1,0 +1,373 @@
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+@mixin LegalActsResponsive480px{
+  .body{
+    height: 1050px;
+    .home-test-mode-container {
+      width: 440px;
+      margin-top: 80px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .posts-page-title-side {
+      height: 100px;
+      width: 400px;
+      margin-left: 70px;
+      .posts-page-title {
+        width: 350px;
+        font-size: 15px;
+      }
+      .posts-page-blue-line {
+        margin-left: 120px;
+      }
+    }
+    .public-info-page-nav-bar {
+      height: 80px;
+      width: 440px;
+      margin-left: 20px;
+      margin-right: 20px;
+      gap: 30px;
+      .public-info-nav-bar-line {
+        top: 267px;
+        width: 440px;
+      }
+    }
+    .legal-acts-container {
+      height: 750px;
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 440px;
+      flex-direction: column;
+      .legal-acts-link {
+        .legal-acts-card {
+          height: 180px;
+          width: 420px;
+          .legal-acts-card-title-section {
+            .legal-acts-card-title {
+               font-size: 15px;
+               width: 280px;
+            }
+            .legal-acts-cube {
+              margin-left: 100px;
+            }
+          }
+          .legal-acts-card-description {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  }
+  /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+  /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+  /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+  /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+  @mixin LegalActsResponsive768px{
+    .body{
+      height: 800px;
+      .home-test-mode-container {
+        width: 720px;
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .posts-page-title-side {
+        height: 100px;
+        width: 500px;
+        margin-left: 220px;
+        .posts-page-title {
+          width: 350px;
+          font-size: 15px;
+        }
+        .posts-page-blue-line {
+          margin-left: 120px;
+        }
+      }
+      .public-info-page-nav-bar {
+        height: 80px;
+        width: 720px;
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 100px;
+        .public-info-nav-bar-line {
+          top: 267px;
+          width: 720px;
+        }
+      }
+      .legal-acts-container {
+        height: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 720px;
+        flex-direction: row;
+        .legal-acts-link {
+          .legal-acts-card {
+            height: 200px;
+            width: 330px;
+            .legal-acts-card-title-section {
+              .legal-acts-card-title {
+                 font-size: 15px;
+                 width: 250px;
+              }
+              .legal-acts-cube {
+                margin-left: 40px;
+              }
+            }
+            .legal-acts-card-description {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+  /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+.body{
+    height: 600px;
+    background-color: #181818;
+      ///  COPYING STYLES  ///
+     /// NAV-BAR kind of part ///
+  .home-test-mode-container{
+    border: solid 2px #313131;
+    height: 50px;
+    width: 1340px;
+    border-top: solid 1px #31313100;
+    z-index: 700;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    .home-test-mode-container-text{
+      color: #d4d4d4;
+      text-align: center;
+      font-size: 14px;
+    }
+  }     /// NAV-BAR kind of part ///
+  .posts-page-title-side{
+    height: 100%;
+    width: 800px;
+    margin-left: 500px;
+    height: 100px;
+    text-align: center;
+    .posts-page-title{
+        color: #fff;
+        font-size: 25px;
+        width: 730px;
+       }
+       .posts-page-blue-line{
+        background-color: rgb(0, 98, 255);
+        width: 100px;
+        height: 5px;
+        margin-left: 320px;
+       }
+}
+    ///  COPYING STYLES  ///
+      /// COPYING STYLES FROM PUBLIC INFO PAGE ///
+    .public-info-page-nav-bar{
+        background-color: #26262eec;
+        height: 100px;
+        width: 1340px;
+        margin-left: 200px;
+        margin-right: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      gap: 230px;
+        .public-info-nav-bar-link{
+            text-decoration: none;
+            .public-info-nav-bar-cube-text-container{
+                margin-top: 15px;
+                height: 50px;
+                width: 40px;
+                .public-info-nav-bar-cube{
+                    border: solid 1px  rgb(0, 81, 203);
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #FFF;
+                    border-radius: 5px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    margin-left: 9px;
+                z-index: 999;               
+                }
+                .public-info-nav-bar-text{
+                    color: #fff;
+                    font-size: 13px;
+                    margin-left: 4px;
+                }
+            }         
+        }
+        .public-info-nav-bar-line{
+            top: 303px;
+            background-color: rgb(54, 54, 54);
+            width: 1340px;
+            border: solid 1px rgb(53, 53, 53);
+            position: absolute;
+           z-index: 100;
+        }
+      }
+      /// COPYING STYLES FROM PUBLIC INFO PAGE ///
+      /// 
+      .legal-acts-container{
+      height: 180px;
+      margin-top: 50px;
+      margin-left: 200px;
+      margin-right: 200px;
+      width: 1350px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      .legal-acts-link{
+        text-decoration: none;
+        .legal-acts-card{
+            background-color: #201f2c;
+            border-radius: 10px;
+            height: 170px;
+            width: 650px;
+            transition: 500ms;
+            padding-left: 15px;
+            padding-top: 10px;
+            &:hover{
+                box-shadow: 0px 0px 12px 5px rgba(40,40,40,0.75);
+                -webkit-box-shadow: 0px 0px 12px 5px rgba(40,40,40,0.75);
+                -moz-box-shadow: 0px 0px 12px 5px rgba(40,40,40,0.75);
+                .legal-acts-card-title-section{
+                  .legal-acts-card-title{
+                    color: rgb(0, 102, 255);              
+                  }
+                  .legal-acts-cube{
+                    display: block;
+                  }
+                }
+                
+                .legal-acts-card-description{
+                  color: rgb(0, 145, 255);
+                  text-decoration: underline;
+                }
+            }
+            .legal-acts-card-title-section{
+              display: flex;         
+              .legal-acts-card-title{
+                color: #fff;
+                font-size: 18px;
+                transition: 500ms;
+              opacity: 0.8;
+              width: 500px;
+              }
+              .legal-acts-cube{
+                background-color: rgb(0, 119, 255);
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+              margin-left: 90px;
+              margin-top: 5px;
+                display: none;
+                .legal-acts-icon{
+                  color: #000;
+                  font-size: 17px;
+                  margin-left: 6px;
+                  margin-top: 5px;
+                }
+              }
+            }          
+            .legal-acts-card-description{
+              opacity: 0.6;
+              color: #fff;
+              font-size: 15px;
+              margin-right: 22px;
+              transition: 500ms;
+              font-weight: 600;
+            }    
+          }
+      }    
+      }
+}
+
+/// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE/// LIGHT MODE
+:host-context([data-theme="light"]) {
+  .body {
+    background-color: #fff;
+
+    /// TEST MODE CONTAINER LIGHT MODE STYLES ///
+
+    .home-test-mode-container {
+      border: solid 2px transparent;
+
+      background-color: rgb(222, 232, 255);
+
+      .home-test-mode-container-text {
+        color: #6460d8;
+      }
+    }
+    /// TEST MODE CONTAINER LIGHT MODE STYLES ///
+
+    .posts-page-title-side {
+      .posts-page-title {
+        color: #000;
+      }
+    }
+    /// COPYING STYLES FROM PUBLIC INFO PAGE ///
+    .public-info-page-nav-bar {
+      background-color: #ddd;
+
+      .public-info-nav-bar-link {
+        .public-info-nav-bar-cube-text-container {
+          .public-info-nav-bar-cube {
+            color: #000;
+          }
+          .public-info-nav-bar-text {
+            color: #fff;
+          }
+        }
+      }
+      .public-info-nav-bar-line {
+        background-color: rgb(197, 197, 197);
+
+        border: solid 1px rgb(194, 194, 194);
+      }
+    }
+    /// COPYING STYLES FROM PUBLIC INFO PAGE ///
+    .legal-acts-container {
+      .legal-acts-link {
+        .legal-acts-card {
+          background-color: #fff;
+          border: solid 1px #b7b7b7;
+
+          .legal-acts-card-title-section {
+            .legal-acts-card-title {
+              color: #000;
+            }
+            .legal-acts-cube {
+              .legal-acts-icon {
+                color: #fff;
+              }
+            }
+          }
+          .legal-acts-card-description {
+            opacity: 0.8;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    @include LegalActsResponsive768px();
+  }
+  
+  @media screen and (max-width: 480px) {
+    @include LegalActsResponsive480px();
+  }
+}
+/// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE/// LIGHT MODE
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  @include LegalActsResponsive768px();
+}
+
+@media screen and (max-width: 480px) {
+  @include LegalActsResponsive480px();
+}

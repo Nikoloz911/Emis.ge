@@ -1,0 +1,49 @@
+<app-nav-bar></app-nav-bar>
+<div class="body">
+    
+
+<div class="home-test-mode-container">
+    <p class="home-test-mode-container-text">საიტი მუშაობს სატესტო რეჟიმში</p>
+</div>
+<div class="productDetails-page-container" *ngIf="productDetails?.product">
+    <div class="porducts-Details-container-top-side">
+        <button class="productsDetails-page-back-button" (click)="goBack()">
+            <i class="bi bi-arrow-left-short"></i>
+          </button>
+          <div class="productDetails-page-title-side">
+            
+            <h1 class="productDetails-page-title">პროდუქტი</h1>
+            <div class="productDetails-page-blue-line"></div>
+      </div>
+    </div>
+  
+   <div class="products-details-all-data-container">
+    <div class="product-details-container-left-side">
+        <img [src]="productDetails.product.image" alt="{{ productDetails.product.logo_title }}" class="product-image"/>
+        <!-- copying -->
+        <div class="posts-inside-page-links-container">
+            <p>გაზიარება:</p>
+            <div class="posts-page-icons">
+              <i class="bi bi-facebook" (click)="onFacebookClick()"></i>
+              <i class="bi bi-linkedin" (click)="onLinkedInClick()"></i>
+              
+            </div>    
+         </div>
+        <!-- copying -->
+    </div>
+   
+ <div class="product-details-container-right-side">
+    <h2 class="product-details-container-title">{{ productDetails.product.title }}</h2>
+    <p class="product-details-container-description">{{ productDetails.product.summary }}</p>
+    </div>
+  
+   </div>
+   
+    
+
+  
+  </div>
+ 
+</div>
+<app-footer></app-footer>
+  

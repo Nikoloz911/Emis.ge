@@ -1,0 +1,49 @@
+
+body{
+  background-color: #181818;
+  height: 421px;
+  width: 100%;
+}
+    .error-text{
+        color: #fff;
+     
+        margin-left: 200px;
+    }
+    .home-test-mode-container{
+      border: solid 2px #313131;
+      height: 50px;
+      width: 1320px;
+      border-top: solid 1px #31313100;
+      margin-top: 100px;
+      margin-left: 200px;
+      margin-right: 200px;
+      .home-test-mode-container-text{
+        color: #d4d4d4;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+
+    
+/// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE/// LIGHT MODE
+:host-context([data-theme="light"]) {
+  body {
+    background-color: #fff;
+  }
+  /// TEST MODE CONTAINER LIGHT MODE STYLES ///
+
+  .home-test-mode-container {
+    border: solid 2px transparent;
+
+    background-color: rgb(222, 232, 255);
+
+    .home-test-mode-container-text {
+      color: #6460d8;
+    }
+  }
+  .error-text{
+    color: #000;
+  }
+  /// TEST MODE CONTAINER LIGHT MODE STYLES ///
+}
+/// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE/// LIGHT MODE

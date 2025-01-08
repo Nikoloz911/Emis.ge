@@ -1,0 +1,317 @@
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+@mixin FAQResponsive480px{
+    /// COPYING RESPONSIVE ///
+    .body{
+      height: auto;
+      .home-test-mode-container {
+        height: 50px;
+        width: 440px;
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      /// NAV-BAR kind of part ///
+    /// COPYING RESPONSIVE ///
+      .posts-page-title-side{
+        width: 400px;
+        margin-left: 70px;
+        .posts-page-title{
+            width: 350px;
+           }
+           .posts-page-blue-line{
+            margin-left: 125px;
+           }
+           
+    }
+    .postsDetails-page-back-button{
+        margin-left: 20px;  
+    }
+    .faq-container{
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 400px;            
+      .faq-container-card{
+        height: auto;
+        padding: 10px;
+        width: auto;
+        .faq-container-title-and-icon-side{
+          gap: 10px;
+          .faq-container-card-title{
+          font-size: 16px;
+          width: 320px;
+          height: auto;
+            margin-left: 10px;                
+          }
+          .faq-container-card-icon{
+          margin-right: 10px;
+          }
+        }
+      }
+  }
+    }
+}
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+ @mixin FAQResponsive768px{
+    /// COPYING RESPONSIVE ///
+    .body{
+      height: auto;
+      .home-test-mode-container {
+        height: 50px;
+        width: 720px;
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      /// NAV-BAR kind of part ///
+    /// COPYING RESPONSIVE ///
+      .posts-page-title-side{
+        width: 400px;
+        margin-left: 200px;
+        .posts-page-title{
+            width: 350px;
+           }
+           .posts-page-blue-line{
+            margin-left: 125px;
+           }
+           
+    }
+    .postsDetails-page-back-button{
+        margin-left: 20px;  
+    }
+    .faq-container{
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 690px;   
+      height: auto;         
+      .faq-container-card{
+        height: auto;
+        padding: 10px;
+        width: auto;
+        .faq-container-title-and-icon-side{
+          gap: 10px;
+          .faq-container-card-title{
+          font-size: 17px;
+          width: 620px;
+          height: auto;
+            margin-left: 10px;                
+          }
+          .faq-container-card-icon{
+          margin-right: 10px;
+          }
+        }
+      }
+  }
+    }
+   }
+ /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX
+   ///  COPYING STYLES  ///
+     /// NAV-BAR kind of part ///
+     .body{
+        height: auto;
+        padding-bottom: 100px;
+        background-color: #181818;
+        .home-test-mode-container{
+            border: solid 2px #313131;
+            height: 50px;
+            width: 1340px;
+            border-top: solid 1px #31313100;
+            z-index: 700;
+            margin-top: 100px;
+            margin-left: 200px;
+            margin-right: 200px;
+            .home-test-mode-container-text{
+              color: #d4d4d4;
+              text-align: center;
+              font-size: 14px;
+            }
+          }     /// NAV-BAR kind of part ///
+          .posts-page-title-side{
+            height: 100%;
+            width: 800px;
+            margin-left: 500px;
+            height: 100px;
+            text-align: center;
+            transform: translateY(-60px);
+            .posts-page-title{
+                color: #fff;
+                font-size: 25px;
+                width: 730px;
+               }
+               .posts-page-blue-line{
+                background-color: rgb(0, 98, 255);
+                width: 100px;
+                height: 5px;
+                margin-left: 320px;
+               }
+               
+        }
+        .postsDetails-page-back-button{
+            margin-left: 190px;
+            margin-top: 40px;
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            font-size: 35px;
+            cursor: pointer;
+        }
+         ///  COPYING STYLES  ///
+        .faq-container{
+            margin-left: 200px;
+            margin-right: 200px;
+            width: 1300px;            
+            background-color: #262430;
+            border-radius: 15px;
+            padding: 20px;
+             transition: height 0.3s ease;
+             overflow: hidden;
+             height: auto;
+             padding-bottom: 100px;
+             .faq-container.expanding,
+             .faq-container.collapsing {
+               height: auto; 
+             }
+            .faq-container-card{
+              display: flex;
+              flex-direction: column;
+              border-bottom: solid 1px #fff;
+              height: 100px;
+              width: 1295px;
+             justify-content: center;
+              transition: height 0.5s ease;
+               position: relative;
+               overflow: hidden;
+               cursor: pointer;
+              &.active {
+                height: auto; ///
+              }
+              .faq-container-title-and-icon-side{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .faq-container-card-title{
+                  font-size: 17px;
+                  font-weight: 600;
+                  color: #a8a8a8;
+                  margin-left: 30px;                
+                  height: 40px;
+                }
+                .faq-container-card-icon{
+                  color: #ddd;
+                margin-right: 30px;
+                }
+              }
+           
+              .faq-container-card-dropdown {
+                display: none;
+                background-color: rgb(65, 64, 79);
+                 margin-right: 20px;
+                padding: 10px;
+                width: 100%;
+                border-top: solid 1px #fff;
+                
+                .faq-container-card-dropdown-description{
+                  color: #ddd;
+                 margin-right: 50px;
+                 font-size: 14px;
+                }
+              }
+          
+              &.active .faq-container-card-dropdown {
+                display: block;          
+              }
+            }
+        }
+}
+
+/// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE/// LIGHT MODE
+:host-context([data-theme="light"]) {
+  .body {
+    background-color: #fff;
+
+    /// TEST MODE CONTAINER LIGHT MODE STYLES ///
+
+    .home-test-mode-container {
+      border: solid 2px transparent;
+
+      background-color: rgb(222, 232, 255);
+
+      .home-test-mode-container-text {
+        color: #6460d8;
+      }
+    }
+    /// TEST MODE CONTAINER LIGHT MODE STYLES ///
+    .posts-page-title-side {
+      .posts-page-title {
+        color: #000;
+      }
+    }
+    .postsDetails-page-back-button{
+   
+      color: #000000;
+  
+  }
+  .faq-container{
+    border: solid 1px #c5c4c4;
+    background-color: #fff;
+   
+     .faq-container.expanding,
+    
+    .faq-container-card{
+     
+      border-bottom: solid 1px #000;
+    
+    
+      .faq-container-title-and-icon-side{
+       
+        .faq-container-card-title{
+         
+          color: #000;
+       
+        }
+        .faq-container-card-icon{
+          color: #000;
+    
+        }
+      }
+   
+      .faq-container-card-dropdown {
+       
+        background-color: rgb(214, 213, 228);
+      
+        border-top: solid 1px #000;
+        
+        .faq-container-card-dropdown-description{
+          color: #333;
+        
+        }
+      }
+  
+      &.active .faq-container-card-dropdown {
+        display: block;
+                
+      }
+     }
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    @include FAQResponsive768px();
+  }
+  
+  @media screen and (max-width: 480px) {
+    @include FAQResponsive480px();
+  }
+}
+/// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE /// LIGHT MODE/// LIGHT MODE
+       
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  @include FAQResponsive768px();
+}
+
+@media screen and (max-width: 480px) {
+  @include FAQResponsive480px();
+}
